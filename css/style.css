@@ -1,34 +1,21 @@
-/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
-html,
-body,
-.view {
-  height: 100%; }
-
-/* Full Page Carousel itself*/
-.carousel {
-  height: 100%; }
-  .carousel .carousel-inner {
-    height: 100%; }
-    .carousel .carousel-inner .carousel-item,
-    .carousel .carousel-inner .active {
-      height: 100%; }
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
 
 /* Navbar animation */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 15.5px;}
 
-  @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-          background: #1C2331 !important;
-      }
-  }
+.top-nav-collapse {
+  background-color: #1C2331; }
 
 /* Adding color to the Navbar on mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .navbar {
  background-color: #1C2331; } }
 
-/* Footer color for sake of consistency with Navbar */
+  /* Footer color for sake of consistency with Navbar */
 .page-footer {
   background-color: #1C2331; }
 
@@ -49,8 +36,74 @@ body,
   height: 100%;
 }
 
+/* Form Width*/
 input.location_local,
 input.query
 {
   width: 20em;
+}
+
+/*Width of whole Page*/
+.container {
+    max-width: 115em;}
+
+/*dropdown menu*/
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.multi-column-dropdown {
+	list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+	display: block;
+	clear: both;
+	line-height: 1.428571429;
+	color: #333;
+	white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+	text-decoration: none;
+	color: #262626;
+	background-color: #999;
+}
+@media (max-width: 767px) {
+	.dropdown-menu.multi-column {
+		min-width: 240px !important;
+		overflow-x: hidden;
+	}
+}
+
+.banner-text
+{
+  background-color: rgba(155, 155, 155, 0.2);
+}
+
+@media (max-width: 600px) {
+.banner-text
+{
+text-align: left !important;
+}
+}
+
+/*GoogleMap*/
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+
+.navbar .nav-item .testing
+{
+padding-left:8px;
+padding-right:8px;
 }
