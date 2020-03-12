@@ -1,0 +1,26 @@
+{
+  "name": "sdl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "express": "^4.17.1",
+    "webpack": "^4.42.0"
+  },
+  "description": "sdl",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sethyeung/sdl.git"
+  }
+}
