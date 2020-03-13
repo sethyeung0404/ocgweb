@@ -23,9 +23,9 @@
   <header>
     <!--Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-      <div class="container">
+      <div class="container-fluid">
         <!-- Brand -->
-        <a class="navbar-brand" href="https://osmiumcg.com/" target="_blank">
+        <a class="navbar-brand" href="#">
           <img class="logo_h" src="img/nav/logo.png" alt="OCG"></img>
         </a>
 
@@ -66,7 +66,7 @@
                       <li><a href="#">One more separated link</a></li>
                     </ul>
                   </div>
-              <div class="col-sm-4">
+                  <div class="col-sm-4">
                     <ul class="multi-column-dropdown">
                       <li><a href="#">Action</a></li>
                       <li><a href="#">Another action</a></li>
@@ -76,7 +76,7 @@
                       <li class="divider"></li>
                       <li><a href="#">One more separated link</a></li>
                     </ul>
-              </div>
+                  </div>
                   <div class="col-sm-4">
                     <ul class="multi-column-dropdown">
                       <li><a href="#">Action</a></li>
@@ -125,54 +125,141 @@
       </div>
     </nav>
     <!--/Navbar -->
-
   </header>
   <!--Main Navigation-->
 
-  <!-- Full Page Intro -->
-  <div class="view full-page-intro" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <!--Main layout-->
+  <main class="mt-4 pt-5">
 
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+    <!--Top Banner-->
+    <div class="wow fadeIn">
+      <picture>
+        <source srcset="https://dummyimage.com/2000x200/#007aeb/4196e5" media="(min-width: 1400px)">
+        <!--2000x200-->
+        <source srcset="https://dummyimage.com/1400x250/#007aeb/4196e5" media="(min-width: 900px)">
+        <!--1400x250-->
+        <source srcset="https://dummyimage.com/900x200/#007aeb/4196e5" media="(min-width: 600px)">
+        <!--900x200-->
+        <img srcset="https://dummyimage.com/600x200/#007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+        <!--600x300-->
+      </picture>
+    </div>
+    <!--Top Banner-->
 
-      <!-- Content -->
+    <!--Section: Map&Contact Us -->
+    <section class="mt-5 wow fadeIn">
       <div class="container">
-
         <!--Grid row-->
-        <div class="row wow fadeIn">
+        <div class="row">
+          <!--Grid column Map-->
+          <div class="col-xs-6 col-md-7 mb-4 text-center text-md-left">
 
-          <!--Grid column-->
-          <div class="col-md-6 mb-4 white-text text-center text-md-left">
-
-            <h1 class="display-4 font-weight-bold">Contact US</h1>
-
+            <h1 class="display-4 font-weight-bold indigo-text">Contact Us!</h1>
             <hr class="hr-light">
             <!--Google map-->
             <div id="googlemap" class="map-container">
               <iframe src="https://maps.google.com/maps?q=Osmium%20Consulting%20Group%2C%20Hong%20Kong&t=&z=19&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <!--Google Maps-->
-
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4">
-
+          <!--Grid column Map-->
+          <!--Grid column Contact Us-->
+          <div class="col-xs-6 col-md-5 mb-4 d-inline-block">
             <!--Card-->
             <div class="card">
+              <div class="card-body">
+                  <!-- Heading -->
+                  <h3 class="dark-grey-text text-center">
+                    <strong class="blue-text">Osmium Consulting Group Limited</strong>
+                  </h3>
+                  <hr>
+                  <div class="">
+                    <h5 class="text-center"><strong>General Enquiries</strong></h4>
+                    <hr>
+                  </div>
+                  <div class="">
+                    <p>Office : +852 3898 5500</p>
+                    <p>Email : info@osmiumcg.com</p>
+                    <p>Address : 1802, 18/F, Fortis Tower, 77 Gloucester Road, Wan Chai, Hong Kong</p>
+                  </div>
+                  <!-- Heading -->
+                  <hr>
+                  <h5 class="text-center"><strong>Media Enquiries</strong></h4>
+                  <hr>
+                  <div class="">
+                    <p>Office : +852 3898 5501</p>
+                    <p>Email : seth.yeung@osmiumcg.com</p>
+                    <hr>
+                  </div>
+            </div>
+            <!--/.Card-->
+          </div>
+          <!--Grid column Contact Us -->
+        </div>
+        <!--Grid row-->
+      </div>
+    </section>
 
+    <!--Section: Map&Contact Us -->
+    <!--Section: Subscribe-->
+      <section class="mt-5 wow fadeIn">
+        <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-xs-6 col-md-6 mb-4 d-inline-block">
+            <!--Card-->
+            <div class="card">
               <!--Card content-->
               <div class="card-body">
+                <!-- Form -->
+                <form name="Message">
+                  <!-- Heading -->
+                  <h3 class="dark-grey-text text-center">
+                    <strong>Send Us a Message</strong>
+                  </h3>
+                  <hr>
+                  <div class="md-form">
+                    <i class="fas fa-user prefix grey-text"></i>
+                    <input type="text" id="form3" class="form-control">
+                    <label for="form3">Your name</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-envelope prefix grey-text"></i>
+                    <input type="text" id="form2" class="form-control">
+                    <label for="form2">Your email</label>
+                  </div>
+                  <div class="md-form">
+                    <i class="fas fa-pencil-alt prefix grey-text"></i>
+                    <textarea type="text" id="form8" class="md-textarea"></textarea>
+                    <label for="form8">Your message</label>
+                  </div>
 
+                  <div class="text-right">
+                    <button class="btn btn-danger">Send</button>
+                    <hr>
+                  </div>
+                </form>
+                <!-- Form -->
+              </div>
+            </div>
+            <!--/.Card-->
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-xs-6 col-md-6 mb-4 d-inline-block">
+            <!--Card-->
+            <div class="card">
+              <!--Card content-->
+              <div class="card-body">
                 <!-- Form -->
                 <form name="">
                   <!-- Heading -->
                   <h3 class="dark-grey-text text-center">
-                    <strong>Write to us:</strong>
+                    <i class="far fa-envelope"></i>
+                    <strong>Sign for our Newsletter</strong>
                   </h3>
                   <hr>
-
                   <div class="md-form">
                     <i class="fas fa-user prefix grey-text"></i>
                     <input type="text" id="form3" class="form-control">
@@ -198,381 +285,38 @@
                       <label for="checkbox1" class="form-check-label dark-grey-text">Subscribe me to the newsletter</label>
                     </fieldset>
                   </div>
-
                 </form>
                 <!-- Form -->
-
               </div>
-
             </div>
             <!--/.Card-->
-
           </div>
           <!--Grid column-->
-
         </div>
         <!--Grid row-->
-
-      </div>
-      <!-- Content -->
-
-    </div>
-    <!-- Mask & flexbox options-->
-
-  </div>
-  <!-- Full Page Intro -->
-
-  <!--Main layout-->
-  <main>
-    <div class="container">
-
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
-
-        <!--Grid row-->
-        <div class="row">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <!-- Main heading -->
-            <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-            <p>This template is created with Material Design for Bootstrap (
-              <strong>MDB</strong> ) framework.</p>
-            <p>Read details below to learn more about MDB.</p>
-            <!-- Main heading -->
-
-            <hr>
-
-            <p>
-              <strong>400+</strong> material UI elements,
-              <strong>600+</strong> material icons,
-              <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-              <strong>Free for personal and commercial use.</strong>
-            </p>
-
-            <!-- CTA -->
-            <a target="_blank" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" class="btn btn-indigo btn-md">Download
-              <i class="fas fa-download ml-1"></i>
-            </a>
-            <a target="_blank" href="https://mdbootstrap.com/docs/jquery/components/" class="btn btn-indigo btn-md">Live demo
-              <i class="far fa-image ml-1"></i>
-            </a>
-
-          </div>
-          <!--Grid column-->
-
         </div>
-        <!--Grid row-->
-
       </section>
-
-      <!--Section: Main info-->
-
+      <!--Section: Subscribe-->
       <hr class="my-5">
 
-      <!--Section: Main features & Quick Start-->
-      <section>
-
-        <h3 class="h3 text-center mb-5">About MDB</h3>
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 px-4">
-
-            <!--First row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-code fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Bootstrap 4</h5>
-                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <div style="height:30px"></div>
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-book fa-2x blue-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Detailed documentation</h5>
-                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas
-                  easily.
-                </p>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <div style="height:30px"></div>
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-1 mr-3">
-                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>
-              </div>
-              <div class="col-10">
-                <h5 class="feature-title">Lots of tutorials</h5>
-                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn
-                  how to use MDB as well as other technologies.</p>
-              </div>
-            </div>
-            <!--/Third row-->
-
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12">
-
-            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-            </div>
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/Grid row-->
-
-      </section>
-      <!--Section: Main features & Quick Start-->
-
-      <hr class="my-5">
-
-      <!--Section: More-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">...and even more</h2>
-
-        <!--First row-->
-        <div class="row features-small mt-5 wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fab fa-firefox fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2 pl-3">
-                <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
-                <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - MDB loves all browsers; all browsers love MDB.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-level-up-alt fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Frequent updates</h5>
-                <p class="grey-text mt-2">MDB becomes better every month. We love the project and enhance as much as possible.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-comments fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Active community</h5>
-                <p class="grey-text mt-2">Our society grows day by day. Visit our forum and check how it is to be a part of our family.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">jQuery 3.x</h5>
-                <p class="grey-text mt-2">MDB is integrated with newest jQuery. Therefore you can use all the latest features which come along with
-                  it.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/First row-->
-
-        <!--Second row-->
-        <div class="row features-small mt-4 wow fadeIn">
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-cubes fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Modularity</h5>
-                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as
-                  well as modules for CSS (SASS files) and JS.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-question fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Technical support</h5>
-                <p class="grey-text mt-2">We care about reliability. If you have any questions - do not hesitate to contact us.
-                </p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-th fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
-                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
-          <div class="col-xl-3 col-lg-6">
-            <!--Grid row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="far fa-file-code fa-2x mb-1 indigo-text" aria-hidden="true"></i>
-              </div>
-              <div class="col-10 mb-2">
-                <h5 class="feature-title font-bold mb-1">SASS files</h5>
-                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
-              </div>
-            </div>
-            <!--/Grid row-->
-          </div>
-          <!--/Grid column-->
-
-        </div>
-        <!--/Second row-->
-
-      </section>
-      <!--Section: More-->
-
-    </div>
   </main>
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
-
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
+  <footer class="page-footer text-center footer-font mt-4 wow fadeIn">
+    <!--/.Wrapper-->
+    <div class="container-fluid">
+      <!--Copyright-->
+      <div class="p-3">
+        Osmium Consulting Group Limited ( EA Licence No. 58549 )
+        <br>Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script> All rights reserved by <a href="#"><strong>Osmium Consulting Group</strong></a>
+      </div>
+      <!--/.Copyright-->
     </div>
-    <!--/.Call to action-->
-
-    <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
-
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
-    </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      Copyright &copy; <script>
-        document.write(new Date().getFullYear());
-      </script> All rights reserved by <a href="#" target="_blank">Osmium Consulting Group</a>
-    </div>
-    <!--/.Copyright-->
-
+    <!--/.Wrapper-->
   </footer>
   <!--/.Footer-->
 

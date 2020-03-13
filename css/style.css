@@ -5,105 +5,171 @@ body {
 /* Navbar animation */
 .navbar {
   background-color: rgba(0, 0, 0, 0.2);
-  font-size: 15.5px;}
+  font-size: 15.5px;
+}
 
 .top-nav-collapse {
-  background-color: #1C2331; }
+  background-color: #1C2331;
+}
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 991px) {
   .navbar {
- background-color: #1C2331; } }
+    background-color: #1C2331;
+  }
+}
 
-  /* Footer color for sake of consistency with Navbar */
+/* Footer color for sake of consistency with Navbar */
 .page-footer {
-  background-color: #1C2331; }
-
-.mx-6
-{
-    margin-left: 13rem !important;
+  background-color: #1C2331;
 }
 
 /*Brand logo on the left-top*/
-.logo_h
-{
-  height:48px;
-}
-
-/*Page Solutions's banner image*/
-.banner1
-{
-  height: 100%;
-}
-
-/* Form Width*/
-input.location_local,
-input.query
-{
-  width: 20em;
+.logo_h {
+  height: 48px;
 }
 
 /*Width of whole Page*/
-.container {
-    max-width: 115em;}
-
-/*dropdown menu*/
-.dropdown-menu.columns-3 {
-	min-width: 600px;
+.container-fluid {
+  max-width: 115em;
 }
+
+.container {
+  max-width: 75em;
+}
+
+/*multi-column dropdown menu*/
+.dropdown-menu.columns-3 {
+  min-width: 600px;
+}
+
 .multi-column-dropdown {
-	list-style: none;
+  list-style: none;
   margin: 0px;
   padding: 0px;
 }
+
 .multi-column-dropdown li a {
-	display: block;
-	clear: both;
-	line-height: 1.428571429;
-	color: #333;
-	white-space: normal;
-}
-.multi-column-dropdown li a:hover {
-	text-decoration: none;
-	color: #262626;
-	background-color: #999;
-}
-@media (max-width: 767px) {
-	.dropdown-menu.multi-column {
-		min-width: 240px !important;
-		overflow-x: hidden;
-	}
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  color: #333;
+  white-space: normal;
 }
 
-.banner-text
-{
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #999;
+}
+
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+/*multi-column dropdown menu*/
+
+/*multi-level dropdown menu*/
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: black;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: rgba(155, 155, 155);
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+
+/*multi-level dropdown menu*/
+
+/*banner-text*/
+.banner-text {
   background-color: rgba(155, 155, 155, 0.2);
+}
+.website-text{
+  width:80%;
+  max-width: 50pc;
+  margin: 0 auto;
 }
 
 @media (max-width: 600px) {
-.banner-text
-{
-text-align: left !important;
-}
+  .banner-text {
+    text-align: left !important;
+  }
 }
 
 /*GoogleMap*/
-.map-container{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    }
-.map-container iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
-
-.navbar .nav-item .testing
-{
-padding-left:8px;
-padding-right:8px;
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
+
+.map-container iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.contact-us
+{
+  width: 100%;
+  height: 100%;
+}
+
+/*social icons on navbar*/
+.navbar .nav-item .testing {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/*footer font*/
+.footer-font {
+  font-size: 13.5px;
+}
+
+.card-comments img {
+  width: 4rem; }
