@@ -449,7 +449,6 @@
     padding-right: 20px;
   }
   .sina-nav .sina-menu > .dropdown > .dropdown-toggle:after {
-    content: "\f107";
     position: absolute;
     top: 20px;
     right: 5px;
@@ -848,16 +847,17 @@
     position: relative;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   .sina-nav .sina-nav-header,
   .sina-nav .navbar-collapse {
     margin: 0;
   }
   .sina-nav .sina-nav-header.social-on {
-    height: 60px;
+    height: 120px;
   }
   .sina-nav .sina-nav-header.social-on .sina-brand {
     margin-top: 60px;
+    align-items:left;
   }
 }
 @media (max-width: 479px) {
