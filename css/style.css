@@ -6,6 +6,12 @@ body {
 .navbar {
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 15.5px;
+  letter-spacing: 1px;
+}
+
+.navbar .container-fluid{
+  padding-left:0!important;
+  padding-right:0!important;
 }
 
 .top-nav-collapse {
@@ -105,8 +111,6 @@ body {
 .dropdown-menu {
   min-width: 15rem;
 }
-
-
 /*multi-level dropdown menu*/
 
 /*banner-text*/
@@ -148,8 +152,8 @@ body {
 
 /*social icons on navbar*/
 .navbar .nav-item .testing {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 
 /*footer font*/
