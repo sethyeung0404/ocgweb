@@ -61,7 +61,6 @@
 }
 .sina-nav ul li a {
   display: block;
-  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   line-height: 20px;
   text-decoration: none;
@@ -110,8 +109,6 @@
   display: none;
 }
 .sina-nav .dropdown-toggle::after {
-  width: inherit;
-  height: inherit;
   border: 0;
   margin: 0;
 }
@@ -181,7 +178,6 @@
 }
 .sina-nav .sina-menu > li.sina-nav-cta-btn {
   padding: 11px 15px;
-  margin-left: 20px;
 }
 .sina-nav .sina-menu > li.sina-nav-cta-btn a {
   padding: 8px 15px;
@@ -222,7 +218,7 @@
 .sina-nav .sina-menu .mega-menu-col-title:before,
 .sina-nav .sina-menu .dropdown .dropdown-toggle:before,
 .sina-nav .sina-menu .dropdown .dropdown-toggle:after {
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
 }
 .sina-nav.navbar-reverse .search-box .form-control {
   text-align: right;
@@ -292,17 +288,7 @@
   color: #1085e4;
   background-color: transparent;
 }
-.sina-nav .extension-nav > ul > li > a .shop-badge {
-  position: absolute;
-  top: 12px;
-  right: 10px;
-  padding: 4px 5px;
-  font-size: 10px;
-  line-height: 10px;
-  border-radius: 50%;
-  background-color: #1085e4;
-  color: #fff;
-}
+
 .sina-nav .extension-nav > ul > li.dropdown .dropdown-menu {
   border-radius: 0;
   box-shadow: 0 0 0;
@@ -312,59 +298,7 @@
   background-color: #fcfcfc;
   border: solid 1px #eee;
 }
-.sina-nav .extension-nav > ul > li .shop-menu > li {
-  padding: 12px 15px;
-  width: 100%;
-  overflow: hidden;
-  border-bottom: solid 1px #eee;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li:last-child {
-  border-bottom: 0;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li .shop-item-photo {
-  padding: 0;
-  float: left;
-  width: 60px;
-  height: 60px;
-  margin-right: 10px;
-  border: solid 1px #eee;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li .shop-item-link,
-.sina-nav .extension-nav > ul > li .shop-menu > li .shop-item-price {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-  line-height: 20px;
-  display: inline-block;
-  max-width: 130px;
-  color: #222;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li .shop-item-link {
-  color: #1085e4;
-  font-size: 12px;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li .shop-item-link:hover, .sina-nav .extension-nav > ul > li .shop-menu > li .shop-item-link:focus {
-  background-color: transparent;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li.shop-total-price .shop-btn {
-  padding: 8px 12px;
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #1085e4;
-  font-size: 14px;
-  color: #1085e4;
-  background-color: #fcfcfc;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li.shop-total-price .shop-btn:hover, .sina-nav .extension-nav > ul > li .shop-menu > li.shop-total-price .shop-btn:focus {
-  background-color: #1085e4;
-  color: #fcfcfc;
-}
-.sina-nav .extension-nav > ul > li .shop-menu > li.shop-total-price > span {
-  color: #222;
-  float: right;
-  font-weight: 700;
-  margin-top: 5px;
-}
+
 .sina-nav.navbar-fixed.navbar-freez.wp-topbar, .sina-nav.mobile-sidebar.wp-topbar .navbar-collapse, .sina-nav.wp-topbar .widget-bar {
   top: 32px;
 }
@@ -417,7 +351,7 @@
   float: left;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1155px) {
   .sina-nav .navbar-toggle {
     display: none;
   }
@@ -450,7 +384,6 @@
   }
   .sina-nav .sina-menu > .dropdown > .dropdown-toggle:after {
     position: absolute;
-    top: 20px;
     right: 5px;
   }
   .sina-nav .sina-menu .dropdown .dropdown-menu {
@@ -458,6 +391,9 @@
     border-radius: 0;
     width: 200px;
     border: solid 1px #eee;
+  }
+  .sina-nav .sina-menu .dropdown .long-menu {
+    width: 320px;
   }
   .sina-nav .sina-menu .dropdown .dropdown-menu .dropdown-menu {
     left: 100%;
@@ -478,6 +414,7 @@
   }
   .sina-nav .sina-menu .dropdown .dropdown-menu .dropdown > .dropdown-toggle:before {
     float: right;
+    font-weight: 900;
     content: "\f105";
     position: absolute;
     right: 8px;
@@ -616,7 +553,7 @@
     display: table;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1154px) {
   .sina-nav {
     background-color: #fff;
     border-color: #eee;
@@ -641,7 +578,7 @@
     float: none;
     display: block;
     text-align: center;
-    height: 60px;
+    height: 40px;
   }
   .sina-nav .navbar-toggle {
     display: inline-block;
@@ -853,10 +790,9 @@
     margin: 0;
   }
   .sina-nav .sina-nav-header.social-on {
-    height: 120px;
+    height: 60px;
   }
   .sina-nav .sina-nav-header.social-on .sina-brand {
-    margin-top: 60px;
     align-items:left;
   }
 }

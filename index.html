@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -25,12 +24,13 @@
 <body>
   <!--Main Navigation-->
   <header>
-    <!--nav v2-->
+    <!--Navbar v2-->
     <div class="nav-container">
-      <nav class="sina-nav mobile-sidebar navbar-fixed" data-top="40" data-md-top="40" data-xl-top="40">
+      <nav class="stroke sina-nav mobile-sidebar navbar-fixed" data-top="40" data-md-top="40" data-xl-top="40">
         <div class="container-fluid">
+
           <!-- right nav (social icons)-->
-          <div class="extension-nav">
+          <div class="extension-nav collapse navbar-collapse">
             <ul>
               <li><a href="https://www.facebook.com/" class="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
               <li><a href="https://instagram.com/" class="" target="_blank"><i class="fab fa-instagram"></i></a></li>
@@ -38,14 +38,15 @@
             </ul>
           </div><!-- right nav (social icons)-->
 
+          <!-- Toggle Button & Logo -->
           <div class="sina-nav-header social-on">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
               <i class="fa fa-bars"></i>
             </button>
-            <a class="sina-brand" href="#">
+            <a class="sina-brand" href="index.html">
               <img class="logo_h" src="img/nav/logo.png" alt="" class="logo-primary">
             </a>
-          </div><!-- .sina-nav-header -->
+          </div><!-- /.Toggle Button & Logo -->
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-menu">
@@ -54,13 +55,13 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Overview</a></li>
-                  <li><a href="#">Why Choose Us</a></li>
-                  <li><a href="#">Our Methodlogy</a></li>
-                  <li><a href="#">Meet Our Team</a></li>
-                  <li><a href="#">Awards & Recognition</a></li>
-                  <li><a href="#">Custom Menu<p class="description">This is Description</p></a>
-                  </li>
+                  <li><a href="about_us.html">Overview</a></li>
+                  <li><a href="about_us.html">Why Choose Us</a></li>
+                  <li><a href="about_us.html">Our Methodlogy</a></li>
+                  <li><a href="about_us.html">Meet Our Team</a></li>
+                  <li><a href="about_us.html">Awards & Recognition</a></li>
+                  <!--<li><a href="#">Custom Menu<p class="description">This is Description</p></a>
+                  </li>-->
                 </ul>
               </li>
               <!--About_us-->
@@ -99,10 +100,10 @@
               <!--Specialization-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specialization</a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Technology, Media & Telecommunications</a></li>
-                  <li><a href="#">Buy Side</a></li>
-                  <li><a href="#">Legal</a></li>
+                <ul class="long-menu dropdown-menu">
+                  <li><a href="specialization.html">Technology, Media & Telecommunications</a></li>
+                  <li><a href="specialization.html">Buy Side</a></li>
+                  <li><a href="specialization.html">Legal</a></li>
                 </ul>
               </li>
               <!--Specialization-->
@@ -110,9 +111,9 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">News & Journal</a></li>
-                  <li><a href="#">Salary Guide</a></li>
-                  <li><a href="#">Life in OCG</a></li>
+                  <li><a href="resources.html">News & Journal</a></li>
+                  <li><a href="resources.html">Market Updates</a></li>
+                  <li><a href="resources.html">Salary Guide</a></li>
                 </ul>
               </li>
               <!--Resources-->
@@ -120,8 +121,8 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Careers</a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Market Updates</a></li>
-                  <li><a href="#">Join Us</a></li>
+                  <li><a href="careers.html">Life in OCG</a></li>
+                  <li><a href="careers.html">Join Us</a></li>
                 </ul>
               </li>
               <!--Specialization-->
@@ -162,281 +163,384 @@
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- .container -->
-
-        <!-- Start widget-bar -->
-        <div class="sina-nav-overlay off"></div>
-        <div class="widget-bar">
-          <a href="#" class="close-widget-bar"><i class="fa fa-times"></i></a>
-          <div class="widget">
-            <h6 class="title">Custom Pages</h6>
-            <ul class="link">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Portfolio</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="widget">
-            <h6 class="title">Additional Links</h6>
-            <ul class="link">
-              <li><a href="#">Retina Homepage</a></li>
-              <li><a href="#">New Page Examples</a></li>
-              <li><a href="#">Parallax Sections</a></li>
-              <li><a href="#">Shortcode Central</a></li>
-              <li><a href="#">Ultimate Font Collection</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- End widget-bar -->
       </nav>
     </div>
-    <!--nav v2-->
+  </header>
+  <!--Navbar v2-->
+  <!--/Main Navigation-->
 
-    <!--Carousel Wrapper-->
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-          <a href="#">
-            <!--
+  <!--Carousel Wrapper-->
+  <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+    <!--Carousel Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel" data-slide-to="1"></li>
+      <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    <!--/.Carousel Indicators-->
+
+    <!--carousel-inner -->
+    <div class="carousel-inner" role="listbox">
+      <!--Carousel Banner1-->
+      <div class="carousel-item active">
+        <a href="#">
+          <!--
                     If you need more browser support use https://scottjehl.github.io/picturefill/
                     If a picture looks blurry on a retina device you can add a high resolution like this
                     <source srcset="img/blog-post-1000x600-2.jpg, blog-post-1000x600-2@2x.jpg 2x" media="(min-width: 768px)">
                     What image sizes should you use? This can help - https://codepen.io/JacobLett/pen/NjramL
                      -->
-            <picture>
-              <source srcset="img/banner/banner21.jpg" media="(min-width: 1400px)">
-              <!--2000x500-->
-              <source srcset="img/banner/banner22.jpg" media="(min-width: 900px)">
-              <!--900x500-->
-              <source srcset="https://dummyimage.com/900x500/007aeb/4196e5" media="(min-width: 600px)">
-              <!--800x500-->
-              <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-              <!--600x500-->
-            </picture>
+          <picture>
+            <source srcset="img/banner/banner2000x500-1.jpg" media="(min-width: 1400px)">
+            <!--2000x500-->
+            <source srcset="img/banner/banner1400x500-1.jpg" media="(min-width: 769px)">
+            <!--1400x500-->
+            <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
+            <!--900x500-->
+            <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+            <!--600x500-->
+          </picture>
 
-            <div class="carousel-caption banner-text">
-              <div>
-                <h1 class="display-5">OSMIUM CONSULTING GROUP LIMITED</h1>
-                <h3>The Recruitment Professionals You Need</h3>
-                <span class="btn btn-sm btn-outline-secondary">Learn More</span>
-              </div>
+          <div class="carousel-caption banner-text">
+            <div>
+              <h1 class="d-none d-sm-block display-5">Osmium Consulting Group</h1>
+              <h3 class="d-block d-sm-none">Osmium Consulting Group<h3>
+                  <h3 class="d-none d-md-block">The Recruitment Professionals You Need</h3>
+                  <span class="btn btn-sm btn-outline-secondary">Learn More</span>
             </div>
-          </a>
-        </div>
-        <!-- /.carousel-item -->
-        <div class="carousel-item">
-          <a href="#">
-            <picture>
-              <source srcset="img/banner/banner23.jpeg" media="(min-width: 1400px)">
-              <!--2000x500-->
-              <source srcset="img/banner/banner24.jpeg" media="(min-width: 900px)">
-              <!--900x500-->
-              <source srcset="img/banner/banner26.jpg" media="(min-width: 600px)">
-              <!--800x500-->
-              <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-              <!--600x500-->
-            </picture>
-
-            <div class="carousel-caption justify-content-center align-items-center banner-text">
-              <div>
-                <h1 class="display-5">Osmium Consulting Group</h1>
-                <h3>The Recruitment Professionals You Need</h3>
-                <span class="btn btn-sm btn-outline-secondary">Our Process</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- /.carousel-item -->
-        <div class="carousel-item">
-          <a href="about_us.html">
-            <picture>
-              <source srcset="img/banner/banner25.jpg" media="(min-width: 1400px)">
-              <!--2000x500-->
-              <source srcset="img/banner/banner26.jpg" media="(min-width: 900px)">
-              <!--900x500-->
-              <source srcset="https://dummyimage.com/900x500/007aeb/4196e5" media="(min-width: 600px)">
-              <!--800x500-->
-              <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-              <!--600x500-->
-            </picture>
-            <div class="carousel-caption justify-content-center align-items-center banner-text">
-              <div>
-                <h1 class="display-5">Osmium Consulting Group</h1>
-                <h3>The Recruitment Professionals You Need</h3>
-                <span class="btn btn-sm btn-secondary">Learn How</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!-- /.carousel-item -->
+          </div>
+        </a>
       </div>
-      <!-- /.carousel-inner -->
-      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <!--/.Carousel Wrapper-->
+      <!--/.Carousel Banner1-->
+      <!--Carousel Banner2-->
+      <div class="carousel-item">
+        <a href="#">
+          <picture>
+            <source srcset="img/banner/banner2000x500-2.jpg" media="(min-width: 1400px)">
+            <!--2000x500-->
+            <source srcset="img/banner/banner1400x500-2.jpg" media="(min-width: 769px)">
+            <!--1400x500-->
+            <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
+            <!--900x500-->
+            <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+            <!--600x500-->
+          </picture>
 
-    <div class="container-fluid mt-5 pt-5 text-center">
-      <div class="row">
-        <div class="col-7 m-auto">
-          <h1 class="h1-responsive"><strong>Osmium Consulting Group</strong> is a Global Recruitment Firm</h1>
-          <p>We are here not only aiming to connect people from different diversities but also
-            <br>to provide a full aspect of services
-            for the best interest and development of our Clients and Candidates.
-            <br>Hence, Relationship and Understanding.</p>
-        </div>
+          <div class="carousel-caption justify-content-center align-items-center banner-text">
+            <div>
+              <h1 class="d-none d-sm-block display-5">Osmium Consulting Group</h1>
+              <h3 class="d-block d-sm-none">Osmium Consulting Group<h3>
+                  <h3 class="d-none d-md-block">The Recruitment Professionals You Need</h3>
+                  <span class="btn btn-sm btn-outline-secondary">Our Process</span>
+            </div>
+          </div>
+        </a>
       </div>
+      <!--/.Carousel Banner2-->
+      <!--Carousel Banner3-->
+      <div class="carousel-item">
+        <a href="about_us.html">
+          <picture>
+            <source srcset="img/banner/banner2000x500-3.jpg" media="(min-width: 1400px)">
+            <!--2000x500-->
+            <source srcset="img/banner/banner1400x500-3.jpg" media="(min-width: 769px)">
+            <!--1400x500-->
+            <source srcset="https://dummyimage.com/800x500/007aeb/4196e5" media="(min-width: 577px)">
+            <!--900x500-->
+            <img srcset="https://dummyimage.com/600x500/007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
+            <!--600x500-->
+          </picture>
+          <div class="carousel-caption justify-content-center align-items-center banner-text">
+            <div>
+              <h1 class="d-none d-sm-block display-5">Osmium Consulting Group</h1>
+              <h3 class="d-block d-sm-none">Osmium Consulting Group<h3>
+                  <h3 class="d-none d-md-block">The Recruitment Professionals You Need</h3>
+                  <span class="btn btn-sm btn-secondary">Learn How</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <!--/.Carousel Banner3-->
     </div>
-    <!--/.Carousel Wrapper-->
+    <!-- /.carousel-inner -->
+    <!--carousel-controller -->
+    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.carousel-controller -->
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main Page text-->
+  <main>
+  <div class="container-fluid mt-5">
+    <!--Grid row-->
+    <div class="row">
+      <!--Card-->
+      <div class="card mb-4 wow fadeIn">
+        <!--Card content-->
+        <div class="card-body">
+          <h1 class="my-4 text-center d-none d-sm-block"><strong>Osmium Consulting Group</strong> is a Global Recruitment Firm</h1>
+          <h1 class="my-4 d-block d-sm-none"><strong>Osmium Consulting Group</strong> is a Global Recruitment Firm</h1>
+          <p>OCG Recruitment Group was an international recruitment company from the outset; established in 2016 in the UK, OCG expanded into Asia ahead of any other international recruitment consultancy, with the inception of its Singapore
+            office in 1987. OCG Recruitment Asia is now the headquarters of the APEJ and UK operations, with coverage spanning over 11 countries and 26 offices. We are recognised as the longest established international recruitment company
+            group within the Asia region.</p>
+          <hr>
+          <h5 class="my-4 text-center d-none d-sm-block"><strong>OCG - Trusted by 1,000 + Customers &amp; Candidates</strong></h5>
+          <h5 class="my-4 d-block d-sm-none"><strong>OCG - Trusted by 1,000 + Customers &amp; Candidates</strong></h5>
+          <!-- Logo carousel -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1800">
+            <div class="carousel-inner">
+              <!-- First slide -->
+              <div class="carousel-item">
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--First column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/nike.png" class="img-fluid px-4" alt="Nike - logo" style="max-height: 40px">
+                  </div>
+                  <!--/First column-->
+
+                  <!--Second column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/amazon.png" class="img-fluid px-4" alt="Amazon - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Second column-->
+
+                  <!--Third column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/sony.png" class="img-fluid px-4" alt="Sony - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Third column-->
+
+                  <!--Fourth column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/samsung.png" class="img-fluid px-4" alt="Samsung - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Fourth column-->
+
+                </div>
+                <!--/Grid row-->
+              </div>
+              <!-- First slide -->
+
+              <!-- Second slide -->
+              <div class="carousel-item active carousel-item-left">
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--First column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/airbus.png" class="img-fluid px-4" alt="Airbus - logo" style="max-height: 40px">
+                  </div>
+                  <!--/First column-->
+
+                  <!--Second column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/yahoo.png" class="img-fluid px-4" alt="Yahoo - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Second column-->
+
+                  <!--Third column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/deloitte.png" class="img-fluid px-4" alt="Deloitte - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Third column-->
+
+                  <!--Fourth column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/ge.png" class="img-fluid px-4" alt="GE - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Fourth column-->
+
+                </div>
+                <!--/Grid row-->
+              </div>
+              <!-- Second slide -->
+
+              <!-- Third slide -->
+              <div class="carousel-item carousel-item-next carousel-item-left">
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--First column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/kpmg.png" class="img-fluid px-4" alt="KPMG - logo" style="max-height: 40px">
+                  </div>
+                  <!--/First column-->
+
+                  <!--Second column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/unity.png" class="img-fluid px-4" alt="Unity - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Second column-->
+
+                  <!--Third column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/ikea.png" class="img-fluid px-4" alt="Ikea - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Third column-->
+
+                  <!--Fourth column-->
+                  <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
+                    <img src="https://mdbootstrap.com/img/logo/brands/aegon.png" class="img-fluid px-4" alt="Aegon - logo" style="max-height: 40px">
+                  </div>
+                  <!--/Fourth column-->
+
+                </div>
+                <!--/Grid row-->
+              </div>
+              <!-- Third slide -->
+            </div>
+          </div>
+          <!-- Logo carousel -->
+        </div>
+
+      </div>
+      <!--/.Card-->
     </div>
-    <!--/Main Navigation-->
+  </div>
+  <!--/.Main Page text-->
 
-    <!--Main layout-->
-    <main class="mt-5 pt-5">
-      <div class="container-fluid">
-
-        <!--Section: Images-->
-        <section class="text-center">
-          <!-- Grid row1 -->
-          <div class="row">
-            <!-- Grid column1 -->
-            <div class="col-lg-4 col-md-4 mb-3">
-              <div class="view overlay">
-                <img src="https://dummyimage.com/600x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column2 -->
-            <div class="col-lg-4 col-md-4 mb-3">
-              <div class="view overlay">
-                <img src="https://dummyimage.com/600x340/#007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column3 -->
-            <div class="col-lg-4 col-md-4 mb-3">
-              <div class="view overlay">
-                <img src="https://dummyimage.com/600x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
+  <!--Main layout-->
+    <div class="container-fluid">
+      <!--Section: Images-->
+      <section class="text-center">
+        <!-- Grid row1 -->
+        <div class="row">
+          <!-- Grid column1 -->
+          <div class="col-lg-8 col-md-8 col-sm-12 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/1655x450/007aeb/4196e5" alt="">
+              <a>
+                <div class="mask d-flex rgba-black-light">
+                  <h4 class="align-self-end text-white">123</h4>
+                </div>
+              </a>
             </div>
           </div>
-          <!-- Grid row2 -->
-          <div class="row">
-            <!-- Grid column1 -->
-            <div class="col-lg-8 col-md-8 mb-3">
-              <div class="view overlay">
-                <img class="img img-responsive" src="https://dummyimage.com/1200x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column2 -->
-            <div class="col-lg-4 col-md-4 mb-3">
-              <div class="view overlay">
-                <img class="img img-responsive" src="https://dummyimage.com/600x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
+          <!-- Grid column2 -->
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
             </div>
           </div>
-          <!-- Grid row3 -->
-          <div class="row">
-            <!-- Grid column1 -->
-            <div class="col-lg-4 col-md-4 mb-3">
-              <div class="view overlay">
-                <img src="https://dummyimage.com/600x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column2 -->
-            <div class="col-lg-4 col-md-4 mb-3">
-              <div class="view overlay">
-                <img src="https://dummyimage.com/600x340/#007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column3 -->
-            <div class="col-lg-4 col-md-4 mb-3">
-              <div class="view overlay">
-                <img src="https://dummyimage.com/600x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
+        </div>
+        <!-- Grid row2 -->
+        <div class="row">
+          <!-- Grid column1 -->
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/#007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
             </div>
           </div>
-          <!-- Grid row2 -->
-          <div class="row">
-            <!-- Grid column1 -->
-            <div class="col-lg-4 col-md-8 mb-3">
-              <div class="view overlay">
-                <img class="img img-responsive" src="https://dummyimage.com/600x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <!-- Grid column2 -->
-            <div class="col-lg-8 col-md-4 mb-3">
-              <div class="view overlay">
-                <img class="img img-responsive" src="https://dummyimage.com/1200x340/007aeb/4196e5" class="img-fluid" alt="">
-                <a>
-                  <div class="mask flex-center rgba-black-light">
-                    <p class="">123</p>
-                  </div>
-                </a>
-              </div>
+          <!-- Grid column2 -->
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
             </div>
           </div>
-        </section>
-        <!--/.Section: Images-->
+          <!-- Grid column3 -->
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/#007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Grid row3 -->
+        <div class="row">
+          <!-- Grid column1 -->
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column2 -->
+          <div class="col-lg-8 col-md-8 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/1655x450/#007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Grid row4 -->
+        <div class="row">
+          <!-- Grid column1 -->
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/#007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column2 -->
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column3 -->
+          <div class="col-lg-4 col-md-4 mb-3">
+            <div class="view overlay">
+              <img class="img img-fluid" src="https://dummyimage.com/800x450/#007aeb/4196e5" alt="">
+              <a>
+                <div class="mask flex-center rgba-black-light">
+                  <p class="">123</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--/.Section: Images-->
 
-        <!--Section: Jumbotron-->
-        <section class="card wow fadeIn" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background2.jpg);">
+      <!--Section: Jumbotron-->
+      <section class="card wow fadeIn" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/background2.jpg);">
 
+        <div class="container">
           <!-- Content -->
           <div class="card-body text-white text-center py-5 px-5 my-5">
 
@@ -458,51 +562,52 @@
 
           </div>
           <!-- Content -->
-        </section>
-        <!--/.Section: Jumbotron-->
-
-      </div>
-    </main>
-    <!--Main layout-->
-
-    <!--Footer-->
-    <footer class="page-footer footer-font mt-4 wow fadeIn">
-      <!--/.Wrapper-->
-      <div class="container-fluid">
-        <div class="row justify-content-between">
-          <!--Copyright-->
-          <div class="col-6 p-3 text-left">Osmium Consulting Group Limited ( EA Licence No. 58549 )</div>
-          <div class="col-6 p-3 text-right">Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script> All rights reserved by <a href="#">Osmium Consulting Group</a></div>
-          <!--/.Copyright-->
         </div>
+      </section>
+      <!--/.Section: Jumbotron-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer footer-font mt-4 wow fadeIn">
+    <!--/.Wrapper-->
+    <div class="container-fluid">
+      <div class="row justify-content-between">
+        <!--Copyright-->
+        <div class="col-6 p-3 text-left">Osmium Consulting Group Limited ( EA Licence No. 58549 )</div>
+        <div class="col-6 p-3 text-right">Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved by <a href="#">Osmium Consulting Group</a></div>
+        <!--/.Copyright-->
       </div>
-      <!--/.Wrapper-->
-    </footer>
-    <!--/.Footer-->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!--sina-nav sidenav bar JavaScript -->
-    <script type="text/javascript" src="js/sina-nav.js"></script>
-    <!-- Initializations -->
-    <script>
-      //要套用的HTML元素
-      document.createElement("picture");
-    </script>
-    <script src="picturefill.js"></script>
-    <script type="text/javascript">
-      // Animations initialization
-      new WOW().init();
-    </script>
+    </div>
+    <!--/.Wrapper-->
+  </footer>
+  <!--/.Footer-->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!--sina-nav sidenav bar JavaScript -->
+  <script type="text/javascript" src="js/sina-nav.js"></script>
+  <!-- Initializations -->
+  <script>
+    //要套用的HTML元素
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.js"></script>
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
 </body>
 
 </html>

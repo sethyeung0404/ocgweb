@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.css" rel="stylesheet">
+  <!-- Sina-nav Sidenav CSS -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/sina-nav.css">
   <!-- Your custom styles (optional) -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
@@ -21,115 +24,153 @@
 <body>
   <!--Main Navigation-->
   <header>
-    <!--Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-      <div class="container-fluid">
-        <!-- Brand -->
-        <a class="navbar-brand" href="#">
-          <img class="logo_h" src="img/nav/logo.png" alt="OCG"></img>
-        </a>
+    <!--Navbar v2-->
+    <div class="nav-container">
+      <nav class="stroke sina-nav mobile-sidebar navbar-fixed" data-top="40" data-md-top="40" data-xl-top="40">
+        <div class="container-fluid">
 
-        <!-- Collapse -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <!-- right nav (social icons)-->
+          <div class="extension-nav collapse navbar-collapse">
+            <ul>
+              <li><a href="https://www.facebook.com/" class="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://instagram.com/" class="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+              <li class="sina-nav-cta-btn"><a href="https://www.linkedin.com/company/osmium-consulting-group"><i class="fab fa-linkedin mr-2"></i>Follow Us!</a></li>
+            </ul>
+          </div><!-- right nav (social icons)-->
 
-        <!-- Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Toggle Button & Logo -->
+          <div class="sina-nav-header social-on">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+            <a class="sina-brand" href="index.html">
+              <img class="logo_h" src="img/nav/logo.png" alt="" class="logo-primary">
+            </a>
+          </div><!-- /.Toggle Button & Logo -->
 
-          <!-- Left -->
-          <ul class="navbar-nav mr-auto smooth-scroll">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">
-                Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_us.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="solutions.html">Solutions</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
-              <ul class="dropdown-menu multi-column columns-3 wow fadeIn" aria-labelledby="navdrop">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <ul class="multi-column-dropdown">
-                      <li><a href="industries.html">A</a></li>
-                      <li><a href="industries.html">B</a></li>
-                      <li><a href="industries.html">C</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">One more separated link</a></li>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+              <!--About_us-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us</a>
+                <ul class="dropdown-menu">
+                  <li><a href="about_us.html">Overview</a></li>
+                  <li><a href="about_us.html">Why Choose Us</a></li>
+                  <li><a href="about_us.html">Our Methodlogy</a></li>
+                  <li><a href="about_us.html">Meet Our Team</a></li>
+                  <li><a href="about_us.html">Awards & Recognition</a></li>
+                  <!--<li><a href="#">Custom Menu<p class="description">This is Description</p></a>
+                  </li>-->
+                </ul>
+              </li>
+              <!--About_us-->
+              <!--Solutions-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Recruitment</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="solutions.html">Contingency Recruitment</a></li>
+                      <li><a href="solutions.html">Retained Recruitment</a></li>
+                      <li><a href="solutions.html">Executive Search</a></li>
                     </ul>
-                  </div>
-                  <div class="col-sm-4">
-                    <ul class="multi-column-dropdown">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <hr>
-                      <li><a href="#">Separated link</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">One more separated link</a></li>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">HR Solutions</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="solutions.html">Secondment</a></li>
+                      <li><a href="solutions.html">Payroll & Tax</a></li>
+                      <li><a href="solutions.html">Visa Application</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Performance Management</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="solutions.html">On Board Training</a></li>
+                          <li><a href="solutions.html">Learning & Development</a></li>
+                          <li><a href="solutions.html">Business Consultantion</a></li>
+                          <li><a href="solutions.html">Reference Check</a></li>
+                        </ul>
+                      </li>
                     </ul>
-                  </div>
-                  <div class="col-sm-4">
-                    <ul class="multi-column-dropdown">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">Separated link</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#">One more separated link</a></li>
-                    </ul>
-                  </div>
+                  </li>
+                </ul>
+              </li>
+              <!--Solutions-->
+              <!--Specialization-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Specialization</a>
+                <ul class="long-menu dropdown-menu">
+                  <li><a href="specialization.html">Technology, Media & Telecommunications</a></li>
+                  <li><a href="specialization.html">Buy Side</a></li>
+                  <li><a href="specialization.html">Legal</a></li>
+                </ul>
+              </li>
+              <!--Specialization-->
+              <!--Resources-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources</a>
+                <ul class="dropdown-menu">
+                  <li><a href="resources.html">News & Journal</a></li>
+                  <li><a href="resources.html">Market Updates</a></li>
+                  <li><a href="resources.html">Salary Guide</a></li>
+                </ul>
+              </li>
+              <!--Resources-->
+              <!--Careers-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Careers</a>
+                <ul class="dropdown-menu">
+                  <li><a href="careers.html">Life in OCG</a></li>
+                  <li><a href="careers.html">Join Us</a></li>
+                </ul>
+              </li>
+              <!--Specialization-->
+
+              <!--mega menu
+              <li class="dropdown menu-item-has-mega-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Megamenu</a>
+                <div class="mega-menu dropdown-menu">
+                  <ul class="mega-menu-row" role="menu">
+                    <li class="mega-menu-col col-md-4">
+                      <h4 class="mega-menu-col-title">Menu Titlle</h4>
+                      <ul class="sub-menu">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-4">
+                      <h4 class="mega-menu-col-title">Menu Titlle</h4>
+                      <ul class="sub-menu">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-col col-md-4">
+                      <h4 class="mega-menu-col-title">Menu Titlle</h4>
+                      <ul class="sub-menu">
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                        <li><a href="#">Custom Menu</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="our_team.html">Our Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
-            </li>
-          </ul>
-
-          <!-- Right -->
-          <ul class="navbar-nav nav-flex-icons ml-auto">
-            <li class="nav-item">
-              <a href="https://www.facebook.com/" class="nav-link testing" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://instagram.com/" class="nav-link testing" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="https://www.linkedin.com/company/osmium-consulting-group" class="nav-link border border-light rounded waves-effect waves-light testing" target="_blank">
-                <i class="fab fa-linkedin mr-2"></i>Follow Us!
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-    <!--/Navbar -->
+              </li> <!--mega menu-->
+              <li class="sina-nav-cta-btn"><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+    </div>
   </header>
-  <!--Main Navigation-->
+  <!--Navbar v2-->
+  <!--/Main Navigation-->
 
   <!--Main layout-->
-  <main class="mt-4 pt-5">
+  <main>
 
         <!--Top Banner-->
         <div class="wow fadeIn">
@@ -145,7 +186,7 @@
           </picture>
         </div>
         <!--Top Banner-->
-        
+
         <div class="container-fluid mt-5">
             <!--Section: Jumbotron-->
             <section class="card blue-gradient wow fadeIn" id="intro">
@@ -336,66 +377,22 @@
     <!--Main layout-->
 
     <!--Footer-->
-    <footer class="page-footer text-center font-small mdb-color darken-2 mt-4 wow fadeIn">
-
-        <!--Call to action-->
-        <div class="pt-4">
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
-                <i class="fas fa-download ml-2"></i>
-            </a>
-            <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
-                <i class="fas fa-graduation-cap ml-2"></i>
-            </a>
+    <footer class="page-footer footer-font mt-4 wow fadeIn">
+      <!--/.Wrapper-->
+      <div class="container-fluid">
+        <div class="row justify-content-between">
+          <!--Copyright-->
+          <div class="col-6 p-3 text-left">Osmium Consulting Group Limited ( EA Licence No. 58549 )</div>
+          <div class="col-6 p-3 text-right">Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script> All rights reserved by <a href="#">Osmium Consulting Group</a></div>
+          <!--/.Copyright-->
         </div>
-        <!--/.Call to action-->
-
-        <hr class="my-4">
-
-        <!-- Social icons -->
-        <div class="pb-4">
-            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-                <i class="fab fa-facebook-f mr-3"></i>
-            </a>
-
-            <a href="https://twitter.com/MDBootstrap" target="_blank">
-                <i class="fab fa-twitter mr-3"></i>
-            </a>
-
-            <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-                <i class="fab fa-youtube mr-3"></i>
-            </a>
-
-            <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-                <i class="fab fa-google-plus-g mr-3"></i>
-            </a>
-
-            <a href="https://dribbble.com/mdbootstrap" target="_blank">
-                <i class="fab fa-dribbble mr-3"></i>
-            </a>
-
-            <a href="https://pinterest.com/mdbootstrap" target="_blank">
-                <i class="fab fa-pinterest mr-3"></i>
-            </a>
-
-            <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-                <i class="fab fa-github mr-3"></i>
-            </a>
-
-            <a href="http://codepen.io/mdbootstrap/" target="_blank">
-                <i class="fab fa-codepen mr-3"></i>
-            </a>
-        </div>
-        <!-- Social icons -->
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3">
-            Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="#" target="_blank">Osmium Consulting Group</a>
-        </div>
-        <!--/.Copyright-->
-
+      </div>
+      <!--/.Wrapper-->
     </footer>
     <!--/.Footer-->
-
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -405,11 +402,18 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!--sina-nav sidenav bar JavaScript -->
+    <script type="text/javascript" src="js/sina-nav.js"></script>
     <!-- Initializations -->
+    <script>
+      //要套用的HTML元素
+      document.createElement("picture");
+    </script>
+    <script src="picturefill.js"></script>
     <script type="text/javascript">
       // Animations initialization
       new WOW().init();
     </script>
   </body>
 
-</html>
+  </html>
