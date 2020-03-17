@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Navbar animation */
@@ -31,7 +31,7 @@ body {
 
 /*Brand logo on the left-top*/
 .logo_h {
-  height: 48px;
+  height: 65px;
 }
 
 /*Width of whole Page*/
@@ -56,6 +56,13 @@ body {
 @media (max-width: 600px) {
   .banner-text {
     text-align: left !important;
+  }
+}
+
+@media (min-width: 1155px) and (max-width: 1255px) {
+  .sina-nav .sina-menu > li > a {
+    font-size: 12px;
+    padding-left: 8px;
   }
 }
 

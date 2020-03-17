@@ -152,7 +152,7 @@
   padding: 11px 15px;
 }
 .sina-nav .sina-menu > li.sina-nav-cta-btn a {
-  padding: 8px 15px;
+  padding: 8px 10px;
   border: 1px solid #1085e4;
   border-radius: 4px;
   text-align: center;
@@ -352,7 +352,7 @@
     float: left;
   }
   .sina-nav .sina-menu > .dropdown > .dropdown-toggle {
-    padding-right: 20px;
+    padding-right: 15px;
   }
   .sina-nav .sina-menu > .dropdown > .dropdown-toggle:after {
     position: absolute;
