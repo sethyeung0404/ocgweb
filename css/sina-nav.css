@@ -42,7 +42,7 @@
   white-space: normal;
   transition: all 0.3s ease-in-out;
   background: transparent;
-  color: #555555;
+  color: #414141;
 }
 
 .sina-nav .animated {
@@ -70,7 +70,7 @@
 }
 
 .sina-nav .sina-brand h2 {
-  color: #555555;
+  color: #414141;
   font-size: 30px;
   line-height: 36px;
   margin: 0;
@@ -78,8 +78,8 @@
 }
 
 .sina-nav .sina-brand p {
-  color: #555555;
-  font-size: 15px;
+  color: #414141;
+  font-size: 14px;
   line-height: 16px;
   margin: 0;
   padding: 0;
@@ -149,7 +149,7 @@
 .sina-nav .sina-menu li a {
   position: relative;
   display: block;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .sina-nav .sina-menu li .fa-icon-left {
@@ -163,9 +163,9 @@
 .sina-nav .sina-menu>li>a {
   padding: 20px 15px;
   max-width: 160px;
-  color: #555555;
-  font-size: 15px;
-  font-weight: 700;
+  color: #414141;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 20px;
 }
 
@@ -196,10 +196,10 @@
 }
 
 .sina-nav .sina-menu li .description {
-  font-size: 85%;
+  font-size: 90%;
   margin: 6px 0 0;
-  font-weight: 300;
-  color: #7c7c7c;
+  font-weight: 400;
+  color: #3e3e3e;
 }
 
 .sina-nav .sina-menu .dropdown-menu {
@@ -208,15 +208,15 @@
 }
 
 .sina-nav .sina-menu .dropdown-menu li a {
-  color: #555555;
-  font-size: 15px;
+  color: #414141;
+  font-size: 14px;
 }
 
 .sina-nav .sina-menu .dropdown-menu li.active>a,
 .sina-nav .sina-menu .dropdown-menu li>a:hover,
 .sina-nav .sina-menu .dropdown-menu li>a:focus {
-  color: #555555;
-  background-color: #f6f6f6;
+  color: #227edc;
+  background-color: #e4e4e4;
 }
 
 .sina-nav .sina-menu .dropdown-toggle:focus {
@@ -229,20 +229,6 @@
   font-family: 'Font Awesome 5 Free';
 }
 
-.sina-nav.navbar-reverse .search-box .form-control {
-  text-align: right;
-}
-
-.sina-nav.navbar-reverse .extension-nav>ul>li.dropdown .dropdown-menu {
-  left: 0;
-  margin-left: 0;
-}
-
-.sina-nav.navbar-reverse.sina-nav-cta-btn {
-  margin-right: 20px;
-  margin-left: 0;
-}
-
 .sina-nav .navbar-collapse {
   padding: 0;
 }
@@ -252,7 +238,7 @@
 }
 
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu.dropdown-menu {
-  width: 100%;
+  width: 50%;
   padding: 0;
   background-color: #fcfcfc;
 }
@@ -264,22 +250,22 @@
 
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-col {
   list-style: none;
-  color: #555555;
+  color: #414141;
 }
 
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-col a {
-  color: #555555;
+  color: #414141;
 }
 
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-col .active>a,
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-col>a:hover,
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-col>a:focus {
   color: #1085e4;
-  background: transparent;
+  background: #dbe6e5;
 }
 
 .sina-nav .menu-item-has-mega-menu.dropdown .mega-menu-col-title {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   margin: 0;
 }
@@ -306,7 +292,7 @@
   padding: 20px 12px;
   position: relative;
   font-size: 18px;
-  color: #555555;
+  color: #414141;
 }
 
 .sina-nav .extension-nav>ul>li>a:hover, .sina-nav .extension-nav>ul>li>a:focus {
@@ -324,66 +310,9 @@
   border: solid 1px #eee;
 }
 
-.sina-nav.navbar-fixed.navbar-freez.wp-topbar, .sina-nav.mobile-sidebar.wp-topbar .navbar-collapse, .sina-nav.wp-topbar .widget-bar {
+.sina-nav.navbar-fixed.navbar-freez.wp-topbar,
+.sina-nav.mobile-sidebar.wp-topbar .navbar-collapse {
   top: 32px;
-}
-
-.sina-nav .widget-bar {
-  position: fixed;
-  overflow-y: auto;
-  top: 0;
-  right: -300px;
-  width: 300px;
-  padding: 20px;
-  height: 100%;
-  z-index: 99999;
-  transition: all 0.6s ease;
-  background-color: #333;
-}
-
-.sina-nav .widget-bar.on {
-  right: 0;
-}
-
-.sina-nav .widget-bar .widget {
-  margin-bottom: 30px;
-}
-
-.sina-nav .widget-bar .widget .link li a {
-  color: #ccc;
-  font-size: 15px;
-}
-
-.sina-nav .widget-bar .widget .link li a:focus, .sina-nav .widget-bar .widget .link li a:hover {
-  color: #fcfcfc;
-}
-
-.sina-nav .widget-bar .widget .title {
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #ccc;
-  font-weight: 700;
-}
-
-.sina-nav .widget-bar .close-widget-bar {
-  float: right;
-  font-size: 15px;
-  color: #ccc;
-}
-
-.sina-nav.navbar-reverse .widget-bar {
-  right: inherit;
-  left: -300px;
-  text-align: right;
-}
-
-.sina-nav.navbar-reverse .widget-bar.on {
-  right: inherit;
-  left: 0;
-}
-
-.sina-nav.navbar-reverse .widget-bar .close-widget-bar {
-  float: left;
 }
 
 @media (min-width: 1155px) {
@@ -393,25 +322,6 @@
 
   .sina-nav .navbar-collapse.collapse {
     display: block;
-  }
-
-  .sina-nav.navbar-reverse .sina-nav-header {
-    float: right;
-  }
-
-  .sina-nav.navbar-reverse .sina-brand {
-    margin: 0 0 0 30px;
-    text-align: right;
-  }
-
-  .sina-nav.navbar-reverse .extension-nav {
-    float: left;
-    margin-right: 20px;
-    margin-left: 0;
-  }
-
-  .sina-nav.navbar-reverse .extension-nav li {
-    float: right;
   }
 
   .sina-nav .sina-menu {
@@ -455,7 +365,9 @@
     top: -1px;
   }
 
-  .sina-nav .sina-menu .dropdown .dropdown-menu>li>a {
+  .sina-nav .sina-menu .dropdown .dropdown-menu>li>a,
+  .sina-nav .sina-menu .dropdown .dropdown-menu .row>li>a
+   {
     padding: 10px 12px;
     border-top: solid 1px #eee;
   }
@@ -470,7 +382,7 @@
 
   .sina-nav .sina-menu .dropdown .dropdown-menu .dropdown>.dropdown-toggle:before {
     float: right;
-    font-weight: 700;
+    font-weight: 500;
     content: "\f105";
     position: absolute;
     right: 8px;
@@ -493,11 +405,11 @@
 
   .sina-nav .sina-menu .mega-menu-col .sub-menu a:hover, .sina-nav .sina-menu .mega-menu-col .sub-menu a:focus {
     color: #1085e4;
-    background: transparent;
+    background: #dbe6e5;
   }
 
   .sina-nav .sina-menu .mega-menu-col-title {
-    font-weight: 700;
+    font-weight: 500;
     padding: 6px 10px;
     display: inline-block;
   }
@@ -657,15 +569,11 @@
     float: none;
     text-align: center;
     margin: 0 0 0 -35px;
-    color: #555555;
+    color: #414141;
   }
 
   .sina-nav .sina-brand h2 {
     margin-top: 0;
-  }
-
-  .sina-nav.navbar-reverse .sina-brand, .sina-nav.navbar-reverse .sina-brand {
-    margin: 0 -26px 0 15px;
   }
 
   .sina-nav .sina-nav-header {
@@ -689,32 +597,13 @@
     border: 1px solid transparent;
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
-    color: #555555;
+    color: #414141;
   }
 
   .sina-nav .navbar-toggle:hover, .sina-nav .navbar-toggle:focus {
     outline: 0;
-    color: #555555;
+    color: #414141;
     background-color: #f6f6f6;
-  }
-
-  .sina-nav.navbar-reverse .navbar-toggle {
-    float: right;
-  }
-
-  .sina-nav.navbar-reverse .extension-nav {
-    left: 15px;
-    right: inherit;
-    margin-left: 0;
-    margin-right: 15px;
-  }
-
-  .sina-nav.navbar-reverse .extension-nav li {
-    float: right;
-  }
-
-  .sina-nav.navbar-reverse .sina-menu>li.sina-nav-cta-btn {
-    margin-right: 0;
   }
 
   .sina-nav .navbar-collapse {
@@ -731,7 +620,7 @@
   .sina-nav .dropdown .dropdown-toggle:before {
     float: right;
     content: "\f105";
-    font-size: 15px;
+    font-size: 14px;
     position: absolute;
     right: 8px;
   }
@@ -760,10 +649,10 @@
     font-weight: 600;
     display: block;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     transition: all 0.3s ease-in-out;
-    color: #555555;
+    color: #414141;
     border-top: solid 1px #eee;
   }
 
@@ -776,7 +665,7 @@
   .sina-nav .sina-menu li .dropdown-menu li a:focus,
   .sina-nav .sina-menu li .mega-menu .mega-menu-col ul li a:hover,
   .sina-nav .sina-menu li .mega-menu .mega-menu-col ul li a:focus {
-    color: #555555;
+    color: #414141;
     background-color: #f6f6f6;
   }
 
@@ -808,7 +697,7 @@
   }
 
   .sina-nav .sina-menu .dropdown .mega-menu.dropdown-menu .mega-menu-row .mega-menu-col-title {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .sina-nav.navbar-transparent {
@@ -849,13 +738,14 @@
   .sina-nav .extension-nav>ul>.dropdown>.dropdown-toggle,
   .sina-nav .extension-nav>ul>li>a {
     padding: 20px 10px;
-    color: #555555;
+    color: #414141;
   }
 
-  .sina-nav .extension-nav>ul>.dropdown>.dropdown-toggle:hover, .sina-nav .extension-nav>ul>.dropdown>.dropdown-toggle:focus,
+  .sina-nav .extension-nav>ul>.dropdown>.dropdown-toggle:hover,
+  .sina-nav .extension-nav>ul>.dropdown>.dropdown-toggle:focus,
   .sina-nav .extension-nav>ul>li>a:hover,
   .sina-nav .extension-nav>ul>li>a:focus {
-    color: #555555;
+    color: #414141;
   }
 
   .sina-nav .extension-nav>ul .dropdown>.dropdown-toggle:before {
@@ -892,16 +782,6 @@
     margin: 0;
   }
 
-  .sina-nav.mobile-sidebar.navbar-reverse .navbar-collapse {
-    right: -300px;
-    left: inherit;
-  }
-
-  .sina-nav.mobile-sidebar.navbar-reverse .navbar-collapse.show {
-    right: 0;
-    left: inherit;
-  }
-
   body.mobile-left>.wrapper {
     margin-left: 300px;
     margin-right: -300px;
@@ -935,11 +815,6 @@
 }
 
 @media (max-width: 479px) {
-  .sina-nav .widget-bar {
-    right: -250px;
-    width: 250px;
-  }
-
   body.on-side {
     margin-left: -250px;
   }
@@ -962,10 +837,6 @@
 
 @media (max-width: 782px) {
   .sina-nav.mobile-sidebar.wp-topbar .navbar-collapse {
-    top: 46px;
-  }
-
-  .sina-nav.wp-topbar .widget-bar {
     top: 46px;
   }
 }

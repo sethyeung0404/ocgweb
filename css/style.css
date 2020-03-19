@@ -4,8 +4,19 @@ body {
 
 /* Navbar animation */
 .sina-nav {
-  font-size: 15.5px;
-  letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+.sina-nav .sina-menu .dropdown .dropdown-menu .row li a
+{
+  height:100%;
+  width:100%;
+}
+
+.ocgblue
+{
+  color:#227edc!important;
 }
 
 .navbar .container-fluid{
@@ -131,6 +142,11 @@ nav.stroke ul li a:after {
 }
 nav.stroke ul li a:hover:after {
   width: 100%;
+}
+
+.contactani:hover {
+  -webkit-animation: heartBeat 1.8s;
+  animation: heartBeat 1.8s;
 }
 
 /* Keyframes */
