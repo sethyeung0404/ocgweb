@@ -63,6 +63,10 @@ body {
   max-width: 50pc;
   margin: 0 auto;
 }
+.sitemap-text{
+  font-size:14px;
+}
+
 
 @media (max-width: 600px) {
   .banner-text {
