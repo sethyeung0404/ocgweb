@@ -46,7 +46,7 @@
 }
 
 .sina-nav .animated {
-  animation-duration: 1s;
+  animation-duration: 0.55s;
   animation-fill-mode: both;
 }
 
@@ -217,7 +217,7 @@
 .sina-nav .sina-menu .dropdown-menu li>a:hover,
 .sina-nav .sina-menu .dropdown-menu li>a:focus {
   color: #118c8b;
-  background-color: #f4f2b1;
+  background-color: #F5F4F4;
 }
 
 .sina-nav .sina-menu .dropdown-toggle:focus {
@@ -765,7 +765,7 @@
     top: 0;
     padding: 0 0 60px;
     margin: 0;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.35s ease-in-out;
     background-color: #fcfcfc;
   }
 
