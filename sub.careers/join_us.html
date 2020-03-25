@@ -25,7 +25,7 @@
 <body>
   <!--Main Navigation-->
   <header>
-    <!--Navbar v2-->
+    <!--Navbar Final-->
     <div class="nav-container">
       <nav class="stroke sina-nav mobile-sidebar navbar-fixed" data-top="40" data-md-top="40" data-xl-top="40">
         <div class="container-fluid">
@@ -33,9 +33,9 @@
           <!-- right nav (social icons)-->
           <div class="extension-nav collapse navbar-collapse">
             <ul>
-              <li><a href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" class="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://instagram.com/" class="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/osmium-consulting-group"><i class="fab fa-linkedin mr-2"></i></a></li>
+              <li><a style="color:#3b5998;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i></a></li>
+              <li><a style="color:#e4405f;" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i></a></li>
+              <li><a style="color:#0e76a8;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i></a></li>
             </ul>
           </div><!-- right nav (social icons)-->
 
@@ -52,6 +52,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+              <!--Home (mobile-only)-->
+              <li class="mobilenav">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
+              </li>
+              <!--Home (mobile-only)-->
               <!--About_us-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
@@ -64,69 +69,109 @@
                 </ul>
               </li>
               <!--About_us-->
-              <!--Solutions-->
-              <li class="dropdown">
+              <!--Solutions (mobile-only)-->
+              <li class="dropdown mobilenav">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS</a>
-                <div class="dropdown-menu" style="width:730px; padding:0px;">
+                <ul class="dropdown-menu ">
+                  <li><a class="ocgblue" href="sub.solutions/recruitment.html">Recruitment
+                      <p class="description">&nbsp;&nbsp;Contingency Recruitment</p>
+                      <p class="description">&nbsp;&nbsp;Retained Recruitment</p>
+                      <p class="description">&nbsp;&nbsp;Executive Search</p>
+                    </a>
+                  </li>
+                  <li><a class="ocgblue" href="sub.solutions/hr_solutions.html">HR Solutions
+                      <p class="description">&nbsp;&nbsp;Payroll & Tax</p>
+                      <p class="description">&nbsp;&nbsp;Secondment</p>
+                      <p class="description">&nbsp;&nbsp;Visa Application</p>
+                    </a>
+                  </li>
+                  <li><a class="ocgblue" href="sub.solutions/performance_management.html">Performance Management
+                      <p class="description">&nbsp;&nbsp;On Board Training</p>
+                      <p class="description">&nbsp;&nbsp;Learning & Development</p>
+                      <p class="description">&nbsp;&nbsp;Business Consultantion</p>
+                      <p class="description">&nbsp;&nbsp;Reference Check</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--Solutions (mobile-only)-->
+              <!--Solutions (pc-only)-->
+              <li class="dropdown pcnav">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS</a>
+                <div class="dropdown-menu" style="width:700px; padding:0px;">
                   <ul class="row" role="menu">
                     <li class="col-md-4" style="padding:2px;"><a class="ocgblue" href="sub.solutions/recruitment.html">Recruitment
                         <p class="description">&nbsp;&nbsp;Contingency Recruitment</p>
                         <p class="description">&nbsp;&nbsp;Retained Recruitment</p>
-                        <p class="description">&nbsp;&nbsp;Executive Search</p></a>
+                        <p class="description">&nbsp;&nbsp;Executive Search</p>
+                      </a>
                     </li>
                     <li class="col-md-4" style="padding:2px;"><a class="ocgblue" href="sub.solutions/hr_solutions.html">HR Solutions
                         <p class="description">&nbsp;&nbsp;Payroll & Tax</p>
                         <p class="description">&nbsp;&nbsp;Secondment</p>
-                        <p class="description">&nbsp;&nbsp;Visa Application</p></a>
+                        <p class="description">&nbsp;&nbsp;Visa Application</p>
+                      </a>
                     </li>
                     <li class="col-md-4" style="padding:2px;"><a class="ocgblue" href="sub.solutions/performance_management.html">Performance Management
-                          <p class="description">&nbsp;&nbsp;On Board Training</p>
-                          <p class="description">&nbsp;&nbsp;Learning & Development</p>
-                          <p class="description">&nbsp;&nbsp;Business Consultantion</p>
-                          <p class="description">&nbsp;&nbsp;Reference Check</p></a>
+                        <p class="description">&nbsp;&nbsp;On Board Training</p>
+                        <p class="description">&nbsp;&nbsp;Learning & Development</p>
+                        <p class="description">&nbsp;&nbsp;Business Consultantion</p>
+                        <p class="description">&nbsp;&nbsp;Reference Check</p>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </li>
-            <!--Solutions-->
-            <!--Specialization-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPECIALIZATION</a>
-              <ul class="long-menu dropdown-menu">
-                <li><a href="sub.specialization/tmt.html">Technology, Media & Telecommunications</a></li>
-                <li><a href="sub.specialization/buyside.html">Buy Side</a></li>
-                <li><a href="sub.specialization/legal.html">Legal</a></li>
-              </ul>
-            </li>
-            <!--Specialization-->
-            <!--Resources-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES</a>
-              <ul class="dropdown-menu">
-                <li><a href="sub.resources/news&journal.html">News & Journal</a></li>
-                <li><a href="sub.resources/market_update.html">Market Updates</a></li>
-                <li><a href="sub.resources/salary_guide.html">Salary Guide</a></li>
-              </ul>
-            </li>
-            <!--Resources-->
-            <!--Careers-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREERS</a>
-              <ul class="dropdown-menu">
-                <li><a href="sub.careers/life_in_ocg.html">Life in OCG</a></li>
-                <li><a href="sub.careers/join_us.html">Join Us</a></li>
-              </ul>
-            </li>
-            <li><a class="contactani" href="contact.html">CONTACT US</a></li>
+              <!--Solutions (pc-only)-->
+              <!--Specialization-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPECIALIZATION</a>
+                <ul class="long-menu dropdown-menu">
+                  <li><a href="sub.specialization/tmt.html">Technology, Media & Telecommunications</a></li>
+                  <li><a href="sub.specialization/buyside.html">Buy Side</a></li>
+                  <li><a href="sub.specialization/legal.html">Legal</a></li>
+                </ul>
+              </li>
+              <!--Specialization-->
+              <!--Resources-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES</a>
+                <ul class="dropdown-menu">
+                  <li><a href="sub.resources/news&journal.html">News & Journal</a></li>
+                  <li><a href="sub.resources/market_update.html">Market Updates</a></li>
+                  <li><a href="sub.resources/salary_guide.html">Salary Guide</a></li>
+                </ul>
+              </li>
+              <!--Resources-->
+              <!--Careers-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREERS</a>
+                <ul class="dropdown-menu">
+                  <li><a href="sub.careers/life_in_ocg.html">Life in OCG</a></li>
+                  <li><a href="sub.careers/join_us.html">Join Us</a></li>
+                </ul>
+              </li>
+              <!--Careers-->
+              <!--Contact-->
+              <li><a class="contactani" href="contact.html">CONTACT US</a></li>
+              <!--Contact-->
+              <!--Social Icons-->
+              <li class="mobilenav">
+                <ul>
+                  <li><a style="color:#3b5998;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i>Facebook</a></li>
+                  <li><a style="color:#e4405f;" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i>Instagram</a></li>
+                  <li><a style="color:#0e76a8;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i>LinkedIn</a></li>
+                </ul>
+              </li>
+              <!--Social Icons-->
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- .container -->
       </nav>
     </div>
+    <!--Navbar Final-->
   </header>
-  <!--Navbar v2-->
   <!--/Main Navigation-->
-
   <!--Main layout-->
   <main>
 

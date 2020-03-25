@@ -204,19 +204,20 @@
 
 .sina-nav .sina-menu .dropdown-menu {
   background-color: #fcfcfc;
+  font-weight: 350;
   margin: 0;
 }
 
 .sina-nav .sina-menu .dropdown-menu li a {
-  color: #414141;
+  color: #7a7a7a;
   font-size: 14px;
 }
 
 .sina-nav .sina-menu .dropdown-menu li.active>a,
 .sina-nav .sina-menu .dropdown-menu li>a:hover,
 .sina-nav .sina-menu .dropdown-menu li>a:focus {
-  color: #227edc;
-  background-color: #e4e4e4;
+  color: #118c8b;
+  background-color: #f4f2b1;
 }
 
 .sina-nav .sina-menu .dropdown-toggle:focus {
