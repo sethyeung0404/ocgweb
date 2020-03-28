@@ -165,7 +165,7 @@
   max-width: 160px;
   color: #414141;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 900;
   line-height: 20px;
 }
 
@@ -196,20 +196,18 @@
 }
 
 .sina-nav .sina-menu li .description {
-  font-size: 90%;
   margin: 6px 0 0;
-  font-weight: 400;
   color: #3e3e3e;
 }
 
 .sina-nav .sina-menu .dropdown-menu {
   background-color: #fcfcfc;
-  font-weight: 350;
+  font-weight: 500;
   margin: 0;
 }
 
 .sina-nav .sina-menu .dropdown-menu li a {
-  color: #7a7a7a;
+  color: #3e3e3e;
   font-size: 14px;
 }
 
@@ -227,6 +225,7 @@
 .sina-nav .sina-menu .mega-menu-col-title:before,
 .sina-nav .sina-menu .dropdown .dropdown-toggle:before,
 .sina-nav .sina-menu .dropdown .dropdown-toggle:after {
+  font-weight: 900;
   font-family: 'Font Awesome 5 Free';
 }
 
@@ -383,7 +382,7 @@
 
   .sina-nav .sina-menu .dropdown .dropdown-menu .dropdown>.dropdown-toggle:before {
     float: right;
-    font-weight: 500;
+    font-weight: 700;
     content: "\f105";
     position: absolute;
     right: 8px;
@@ -410,7 +409,6 @@
   }
 
   .sina-nav .sina-menu .mega-menu-col-title {
-    font-weight: 500;
     padding: 6px 10px;
     display: inline-block;
   }
@@ -647,7 +645,7 @@
   .sina-nav .sina-menu li a {
     max-width: inherit;
     padding: 12px;
-    font-weight: 600;
+    font-weight: 500;
     display: block;
     cursor: pointer;
     font-size: 14px;
