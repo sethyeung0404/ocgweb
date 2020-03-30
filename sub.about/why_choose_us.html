@@ -25,7 +25,7 @@
 <body>
   <!--Main Navigation-->
   <header>
-    <!--Navbar v2-->
+    <!--Navbar Final-->
     <div class="nav-container">
       <nav class="stroke sina-nav mobile-sidebar navbar-fixed" data-top="40" data-md-top="40" data-xl-top="40">
         <div class="container-fluid">
@@ -33,9 +33,9 @@
           <!-- right nav (social icons)-->
           <div class="extension-nav collapse navbar-collapse">
             <ul>
-              <li><a href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" class="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://instagram.com/" class="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/osmium-consulting-group"><i class="fab fa-linkedin mr-2"></i></a></li>
+              <li><a style="color:#3b5998;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i></a></li>
+              <li><a style="color:#e4405f;" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i></a></li>
+              <li><a style="color:#0e76a8;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i></a></li>
             </ul>
           </div><!-- right nav (social icons)-->
 
@@ -52,6 +52,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+              <!--Home (mobile-only)-->
+              <li class="mobilenav">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
+              </li>
+              <!--Home (mobile-only)-->
               <!--About_us-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
@@ -64,67 +69,108 @@
                 </ul>
               </li>
               <!--About_us-->
-              <!--Solutions-->
-              <li class="dropdown">
+              <!--Solutions (mobile-only)-->
+              <li class="dropdown mobilenav">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS</a>
-                <div class="dropdown-menu" style="width:730px; padding:0px;">
+                <ul class="dropdown-menu ">
+                  <li><a class="ocgblue" href="sub.solutions/recruitment.html">Recruitment
+                      <p class="description">&nbsp;&nbsp;Contingency Recruitment</p>
+                      <p class="description">&nbsp;&nbsp;Retained Recruitment</p>
+                      <p class="description">&nbsp;&nbsp;Executive Search</p>
+                    </a>
+                  </li>
+                  <li><a class="ocgblue" href="sub.solutions/hr_solutions.html">HR Solutions
+                      <p class="description">&nbsp;&nbsp;Payroll & Tax</p>
+                      <p class="description">&nbsp;&nbsp;Secondment</p>
+                      <p class="description">&nbsp;&nbsp;Visa Application</p>
+                    </a>
+                  </li>
+                  <li><a class="ocgblue" href="sub.solutions/performance_management.html">Performance Management
+                      <p class="description">&nbsp;&nbsp;On Board Training</p>
+                      <p class="description">&nbsp;&nbsp;Learning & Development</p>
+                      <p class="description">&nbsp;&nbsp;Business Consultantion</p>
+                      <p class="description">&nbsp;&nbsp;Reference Check</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--Solutions (mobile-only)-->
+              <!--Solutions (pc-only)-->
+              <li class="dropdown pcnav">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS</a>
+                <div class="dropdown-menu" style="width:700px; padding:0px;">
                   <ul class="row" role="menu">
                     <li class="col-md-4" style="padding:2px;"><a class="ocgblue" href="sub.solutions/recruitment.html">Recruitment
                         <p class="description">&nbsp;&nbsp;Contingency Recruitment</p>
                         <p class="description">&nbsp;&nbsp;Retained Recruitment</p>
-                        <p class="description">&nbsp;&nbsp;Executive Search</p></a>
+                        <p class="description">&nbsp;&nbsp;Executive Search</p>
+                      </a>
                     </li>
                     <li class="col-md-4" style="padding:2px;"><a class="ocgblue" href="sub.solutions/hr_solutions.html">HR Solutions
                         <p class="description">&nbsp;&nbsp;Payroll & Tax</p>
                         <p class="description">&nbsp;&nbsp;Secondment</p>
-                        <p class="description">&nbsp;&nbsp;Visa Application</p></a>
+                        <p class="description">&nbsp;&nbsp;Visa Application</p>
+                      </a>
                     </li>
                     <li class="col-md-4" style="padding:2px;"><a class="ocgblue" href="sub.solutions/performance_management.html">Performance Management
-                          <p class="description">&nbsp;&nbsp;On Board Training</p>
-                          <p class="description">&nbsp;&nbsp;Learning & Development</p>
-                          <p class="description">&nbsp;&nbsp;Business Consultantion</p>
-                          <p class="description">&nbsp;&nbsp;Reference Check</p></a>
+                        <p class="description">&nbsp;&nbsp;On Board Training</p>
+                        <p class="description">&nbsp;&nbsp;Learning & Development</p>
+                        <p class="description">&nbsp;&nbsp;Business Consultantion</p>
+                        <p class="description">&nbsp;&nbsp;Reference Check</p>
+                      </a>
                     </li>
                   </ul>
                 </div>
               </li>
-            <!--Solutions-->
-            <!--Specialization-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPECIALIZATION</a>
-              <ul class="long-menu dropdown-menu">
-                <li><a href="sub.specialization/tmt.html">Technology, Media & Telecommunications</a></li>
-                <li><a href="sub.specialization/buyside.html">Buy Side</a></li>
-                <li><a href="sub.specialization/legal.html">Legal</a></li>
-              </ul>
-            </li>
-            <!--Specialization-->
-            <!--Resources-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES</a>
-              <ul class="dropdown-menu">
-                <li><a href="sub.resources/news&journal.html">News & Journal</a></li>
-                <li><a href="sub.resources/market_updates.html">Market Updates</a></li>
-                <li><a href="sub.resources/salary_guide.html">Salary Guide</a></li>
-              </ul>
-            </li>
-            <!--Resources-->
-            <!--Careers-->
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREERS</a>
-              <ul class="dropdown-menu">
-                <li><a href="sub.careers/life_in_ocg.html">Life in OCG</a></li>
-                <li><a href="sub.careers/join_us.html">Join Us</a></li>
-              </ul>
-            </li>
-            <li><a class="contactani" href="contact.html">CONTACT US</a></li>
+              <!--Solutions (pc-only)-->
+              <!--Specialization-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPECIALIZATION</a>
+                <ul class="long-menu dropdown-menu">
+                  <li><a href="sub.specialization/tmt.html">Technology, Media & Telecommunications</a></li>
+                  <li><a href="sub.specialization/buyside.html">Buy Side</a></li>
+                  <li><a href="sub.specialization/legal.html">Legal</a></li>
+                </ul>
+              </li>
+              <!--Specialization-->
+              <!--Resources-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES</a>
+                <ul class="dropdown-menu">
+                  <li><a href="sub.resources/news&journal.html">News & Journal</a></li>
+                  <li><a href="sub.resources/market_updates.html">Market Updates</a></li>
+                  <li><a href="sub.resources/salary_guide.html">Salary Guide</a></li>
+                </ul>
+              </li>
+              <!--Resources-->
+              <!--Careers-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CAREERS</a>
+                <ul class="dropdown-menu">
+                  <li><a href="sub.careers/life_in_ocg.html">Life in OCG</a></li>
+                  <li><a href="sub.careers/join_us.html">Join Us</a></li>
+                </ul>
+              </li>
+              <!--Careers-->
+              <!--Contact-->
+              <li><a class="contactani" href="contact.html">CONTACT US</a></li>
+              <!--Contact-->
+              <!--Social Icons-->
+              <li class="mobilenav">
+                <ul>
+                  <li><a style="color:#3b5998;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i>Facebook</a></li>
+                  <li><a style="color:#e4405f;" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i>Instagram</a></li>
+                  <li><a style="color:#0e76a8;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i>LinkedIn</a></li>
+                </ul>
+              </li>
+              <!--Social Icons-->
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- .container -->
       </nav>
     </div>
+    <!--Navbar Final-->
   </header>
-  <!--Navbar v2-->
   <!--/Main Navigation-->
 
   <!--Main layout-->
@@ -132,25 +178,38 @@
 
     <!--Top Banner-->
     <div class="wow fadeIn">
-      <picture>
-        <source srcset="https://dummyimage.com/2000x250/#007aeb/4196e5" media="(min-width: 1400px)">
-        <!--2000x250-->
-        <source srcset="https://dummyimage.com/1400x250/#007aeb/4196e5" media="(min-width: 900px)">
-        <!--1400x250-->
-        <source srcset="https://dummyimage.com/900x200/#007aeb/4196e5" media="(min-width: 600px)">
-        <!--900x200-->
-        <img srcset="https://dummyimage.com/600x200/#007aeb/4196e5" alt="responsive image" class="d-block img-fluid">
-        <!--600x300-->
-      </picture>
+      <div class="view">
+        <picture>
+          <source srcset="img\banner\banner11-2000x250.png" media="(min-width: 1400px)">
+          <!--2000x250-->
+          <source srcset="img\banner\banner11-1400x250.png" media="(min-width: 900px)">
+          <!--1400x250-->
+          <source srcset="img\banner\banner11-900x200.png" media="(min-width: 600px)">
+          <!--900x200-->
+          <img srcset="img\banner\banner11-600x300.png" alt="responsive image" class="d-block img-fluid">
+          <!--600x300-->
+        </picture>
+        <div class="mask flex-center rgba-grey-strong">
+          <h1 class="white-text">
+            Strong Overlay
+          </h1>
+        </div>
+      </div>
     </div>
     <!--Top Banner-->
     <!--Sitemap-->
-    <div class="wow fadeIn d-sm-flex container">
+    <div class="wow fadeIn d-sm-flex container mb-4">
       <p class="pt-3 sitemap-text">
         <a href="index.html">Home</a> > About Us
       </p>
     </div>
-    <!--/.Sitemap-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>&nbsp;<strong>Why Choose Us</strong></h2>
+        </div>
+      </div>
+      <!--/.Sitemap-->
 
     <!--Section: Post-->
     <div class="container">
@@ -160,145 +219,13 @@
         <div class="row wow fadeIn">
           <!--Grid column-->
           <div class="col-md-8 mb-4">
-                <h1>Why Choose Us</h1>
-                <h4>Who We Are</h4>
-                <p>OCG Recruitment Group was an international recruitment company from the outset; established in 1975 in the UK, OCG expanded into Asia ahead of any other international recruitment consultancy, with the inception of its Singapore
-                  office in 1987. OCG Recruitment Asia is now the headquarters of the APEJ and UK operations, with coverage spanning over 11 countries and 26 offices. We are recognised as the longest established international recruitment company
-                  group within the Asia region.</p>
-                <br><br>
-                <h4>What We Do</h4>
-                <p>We are a regional team of over 1,200 recruitment consultants with specialist knowledge of our industries worldwide. Through consultation and precisely understanding the needs of both companies and individuals we are able to place
-                  professionals in outstanding companies - from multinationals to positions that require specialist language skills, in particular but not limited to Japanese.
-                  We believe that linking the right people to the right companies enables personal growth as well as company success. This then leads to the development of the global economy and further the development of society. Enabling this cycle
-                  is our Mission.</p>
-                <br><br>
-                <h4>Where We Are</h4>
-                <p>JAC Recruitment Asia has grown solely through organic expansion, not by acquiring other agencies, so you can expect the same level of service from all of our offices no matter which country or city they are located. We have
-                  strategically built a network of branches in key cities to better service our clients across the region by positioning ourselves close to the local talent pools. Having three local offices within each Malaysia, Thailand and
-                  Indonesia and two in Vietnam in addition to our operations in Singapore, India, Korea, Hong Kong and China, our aim is to provide the local experience to those looking to recruit across the region.
-                  Recruitment Group was an international recruitment company from the outset; established in 1975 in the UK, OCG expanded into Asia ahead of any other international recruitment consultancy, with the inception of its Singapore office
-                  in 1987. OCG Recruitment Asia is now the headquarters of the APEJ and UK operations, with coverage spanning over 11 countries and 26 offices. We are recognised as the longest established international recruitment company group
-                  within the Asia region.</p>
-                <br><br>
-                <h4>Osmium Consulting Group in Hong Kong</h4>
-                <p>Established in 2011, using OCG Recruitment's 30 years of experience operating in Asia, our JAC Hong Kong operation provides specialist recruitment services for the SAR regions. It is also the regional head office for JAC's Greater
-                  China business operations and thus collaborates closely with the JAC offices in Shanghai and Guangzhou providing high-calibre talent to our clients and supporting our candidates' new careers.
+            <h1>Why Choose Us</h1>
+            <p class="webcontent">Osmium Consulting Group has quickly established a market reputation as a dedicated and value-adding specialist search and selection firm.
+              We offer our client’s access to the very best candidates and our candidates the opportunity to develop a global career.
+              We possess a number of unparalleled and unique features that not only define, but also set us apart from other service providers in the recruitment sector :
+            </p>
 
-                  Our areas of specialisation include: Electrical, Mechanical & Chemical, IT & Telecommunications, Accountancy & Finance, Medical/Pharmaceuticals/ Bioscience, Banking & Financial Services.
-
-                  To find out more about how OCG Recruitment can help you in your job search or for your business' recruitment needs, feel free to contact us for more information or email us at hongkong@jac-recruitment.hk</p>
-                <h5 class="my-4">
-                  <strong>OCG - trusted by 400 000 + customers &amp; designers</strong>
-                </h5>
-
-                <!-- Logo carousel -->
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="1800">
-                  <div class="carousel-inner mb-5">
-                    <!-- First slide -->
-                    <div class="carousel-item">
-                      <!--Grid row-->
-                      <div class="row">
-
-                        <!--First column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/nike.png" class="img-fluid px-4" alt="Nike - logo" style="max-height: 40px">
-                        </div>
-                        <!--/First column-->
-
-                        <!--Second column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/amazon.png" class="img-fluid px-4" alt="Amazon - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Second column-->
-
-                        <!--Third column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/sony.png" class="img-fluid px-4" alt="Sony - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Third column-->
-
-                        <!--Fourth column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/samsung.png" class="img-fluid px-4" alt="Samsung - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Fourth column-->
-
-                      </div>
-                      <!--/Grid row-->
-                    </div>
-                    <!-- First slide -->
-
-                    <!-- Second slide -->
-                    <div class="carousel-item active carousel-item-left">
-                      <!--Grid row-->
-                      <div class="row">
-
-                        <!--First column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/airbus.png" class="img-fluid px-4" alt="Airbus - logo" style="max-height: 40px">
-                        </div>
-                        <!--/First column-->
-
-                        <!--Second column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/yahoo.png" class="img-fluid px-4" alt="Yahoo - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Second column-->
-
-                        <!--Third column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/deloitte.png" class="img-fluid px-4" alt="Deloitte - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Third column-->
-
-                        <!--Fourth column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/ge.png" class="img-fluid px-4" alt="GE - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Fourth column-->
-
-                      </div>
-                      <!--/Grid row-->
-                    </div>
-                    <!-- Second slide -->
-
-                    <!-- Third slide -->
-                    <div class="carousel-item carousel-item-next carousel-item-left">
-                      <!--Grid row-->
-                      <div class="row">
-
-                        <!--First column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/kpmg.png" class="img-fluid px-4" alt="KPMG - logo" style="max-height: 40px">
-                        </div>
-                        <!--/First column-->
-
-                        <!--Second column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/unity.png" class="img-fluid px-4" alt="Unity - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Second column-->
-
-                        <!--Third column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/ikea.png" class="img-fluid px-4" alt="Ikea - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Third column-->
-
-                        <!--Fourth column-->
-                        <div class="col-lg-3 col-md-6 d-flex align-items-center justify-content-center">
-                          <img src="https://mdbootstrap.com/img/logo/brands/aegon.png" class="img-fluid px-4" alt="Aegon - logo" style="max-height: 40px">
-                        </div>
-                        <!--/Fourth column-->
-
-                      </div>
-                      <!--/Grid row-->
-                    </div>
-                    <!-- Third slide -->
-                  </div>
-                </div>
-                <!-- Logo carousel -->
-        </div>
+          </div>
           <!--Grid column-->
 
           <!--Grid column-->

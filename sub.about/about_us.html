@@ -25,7 +25,7 @@
 <body>
   <!--Main Navigation-->
   <header>
-    <!--Navbar v2-->
+    <!--Navbar Final-->
     <div class="nav-container">
       <nav class="stroke sina-nav mobile-sidebar navbar-fixed" data-top="40" data-md-top="40" data-xl-top="40">
         <div class="container-fluid">
@@ -33,9 +33,9 @@
           <!-- right nav (social icons)-->
           <div class="extension-nav collapse navbar-collapse">
             <ul>
-              <li><a href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" class="" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://instagram.com/" class="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/osmium-consulting-group"><i class="fab fa-linkedin mr-2"></i></a></li>
+              <li><a style="color:#3b5998;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i></a></li>
+              <li><a style="color:#e4405f;" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i></a></li>
+              <li><a style="color:#0e76a8;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i></a></li>
             </ul>
           </div><!-- right nav (social icons)-->
 
@@ -52,6 +52,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navbar-menu">
             <ul class="sina-menu" data-in="fadeInLeft" data-out="fadeInOut">
+              <!--Home (mobile-only)-->
+              <li class="mobilenav">
+                <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">HOME</a>
+              </li>
+              <!--Home (mobile-only)-->
               <!--About_us-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">ABOUT US</a>
@@ -64,10 +69,36 @@
                 </ul>
               </li>
               <!--About_us-->
-              <!--Solutions-->
-              <li class="dropdown">
+              <!--Solutions (mobile-only)-->
+              <li class="dropdown mobilenav">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS</a>
-                <div class="dropdown-menu" style="width:730px; padding:0px;">
+                <ul class="dropdown-menu ">
+                  <li><a class="ocgblue" href="sub.solutions/recruitment.html">Recruitment
+                      <p class="description">&nbsp;&nbsp;Contingency Recruitment</p>
+                      <p class="description">&nbsp;&nbsp;Retained Recruitment</p>
+                      <p class="description">&nbsp;&nbsp;Executive Search</p>
+                    </a>
+                  </li>
+                  <li><a class="ocgblue" href="sub.solutions/hr_solutions.html">HR Solutions
+                      <p class="description">&nbsp;&nbsp;Payroll & Tax</p>
+                      <p class="description">&nbsp;&nbsp;Secondment</p>
+                      <p class="description">&nbsp;&nbsp;Visa Application</p>
+                    </a>
+                  </li>
+                  <li><a class="ocgblue" href="sub.solutions/performance_management.html">Performance Management
+                      <p class="description">&nbsp;&nbsp;On Board Training</p>
+                      <p class="description">&nbsp;&nbsp;Learning & Development</p>
+                      <p class="description">&nbsp;&nbsp;Business Consultantion</p>
+                      <p class="description">&nbsp;&nbsp;Reference Check</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--Solutions (mobile-only)-->
+              <!--Solutions (pc-only)-->
+              <li class="dropdown pcnav">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">SOLUTIONS</a>
+                <div class="dropdown-menu" style="width:700px; padding:0px;">
                   <ul class="row" role="menu">
                     <li class="col-md-4" style="padding:2px;"><a class="ocgblue" href="sub.solutions/recruitment.html">Recruitment
                         <p class="description">&nbsp;&nbsp;Contingency Recruitment</p>
@@ -91,7 +122,7 @@
                   </ul>
                 </div>
               </li>
-              <!--Solutions-->
+              <!--Solutions (pc-only)-->
               <!--Specialization-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">SPECIALIZATION</a>
@@ -120,14 +151,26 @@
                   <li><a href="sub.careers/join_us.html">Join Us</a></li>
                 </ul>
               </li>
+              <!--Careers-->
+              <!--Contact-->
               <li><a class="contactani" href="contact.html">CONTACT US</a></li>
+              <!--Contact-->
+              <!--Social Icons-->
+              <li class="mobilenav">
+                <ul>
+                  <li><a style="color:#3b5998;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i>Facebook</a></li>
+                  <li><a style="color:#e4405f;" href="https://instagram.com/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i>Instagram</a></li>
+                  <li><a style="color:#0e76a8;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i>LinkedIn</a></li>
+                </ul>
+              </li>
+              <!--Social Icons-->
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- .container -->
       </nav>
     </div>
+    <!--Navbar Final-->
   </header>
-  <!--Navbar v2-->
   <!--/Main Navigation-->
 
   <!--Main layout-->
@@ -138,11 +181,11 @@
         <picture>
           <source srcset="img\banner\banner13-2000x250.png" media="(min-width: 1400px)">
           <!--2000x250-->
-          <source srcset="img\banner\banner11-1400x250.png" media="(min-width: 900px)">
+          <source srcset="img\banner\banner13-1400x250.png" media="(min-width: 900px)">
           <!--1400x250-->
-          <source srcset="img\banner\banner11-900x200.png" media="(min-width: 600px)">
+          <source srcset="img\banner\banner13-900x200.png" media="(min-width: 600px)">
           <!--900x200-->
-          <img srcset="img\banner\banner11-600x300.png" alt="responsive image" class="d-block img-fluid">
+          <img srcset="img\banner\banner13-600x300.png" alt="responsive image" class="d-block img-fluid">
           <!--600x300-->
         </picture>
         <div class="mask flex-center rgba-grey-strong">
@@ -156,7 +199,7 @@
     <!--Sitemap-->
     <div class="wow fadeIn d-sm-flex container mb-4">
       <p class="pt-3 sitemap-text">
-        <a href="index.html">Home</a> > Recruitment
+        <a href="index.html">Home</a> > About Us
       </p>
     </div>
     <div class="container">
@@ -167,172 +210,160 @@
       </div>
       <!--/.Sitemap-->
 
-        <!--Section: Post-->
-        <section class="mt-3">
-          <div class="row wow fadeIn justify-">
-            <div class="col-md-9 col-sm-8 mb-4">
-              <div class="row">
-                <div class="col-12">
-                  <p class="text-justify webcontent">OCG Recruitment Group was an international recruitment company from the outset; established in 1975 in the UK, OCG expanded into Asia ahead of any other international recruitment consultancy, with the inception
-                    of its Singapore office in 1987. OCG Recruitment Asia is now the headquarters of the APEJ and UK operations, with coverage spanning over 11 countries and 26 offices. We are recognised as the longest established international recruitment company
-                    group within the Asia region.</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <hr class="my-5">
-                  <h4 class="headline">What We Do</h4>
-                  <p class="webcontent">We are a regional team of over 1,200 recruitment consultants with specialist knowledge of our industries worldwide. Through consultation and precisely understanding the needs of both companies and individuals we are able to place
-                    professionals in outstanding companies - from multinationals to positions that require specialist language skills, in particular but not limited to Japanese.
-                    We believe that linking the right people to the right companies enables personal growth as well as company success. This then leads to the development of the global economy and further the development of society. Enabling this
-                    cycle
-                    is our Mission.</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <hr class="my-5">
-                  <h4 class="headline">Where We Are</h4>
-                  <p class="webcontent">JAC Recruitment Asia has grown solely through organic expansion, not by acquiring other agencies, so you can expect the same level of service from all of our offices no matter which country or city they are located. We have
-                    strategically built a network of branches in key cities to better service our clients across the region by positioning ourselves close to the local talent pools. Having three local offices within each Malaysia, Thailand and
-                    Indonesia and two in Vietnam in addition to our operations in Singapore, India, Korea, Hong Kong and China, our aim is to provide the local experience to those looking to recruit across the region.
-                    Recruitment Group was an international recruitment company from the outset; established in 1975 in the UK, OCG expanded into Asia ahead of any other international recruitment consultancy, with the inception of its Singapore office
-                    in 1987. OCG Recruitment Asia is now the headquarters of the APEJ and UK operations, with coverage spanning over 11 countries and 26 offices. We are recognised as the longest established international recruitment company group
-                    within the Asia region.</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <hr class="my-5">
-                  <h4 class="headline">Osmium Consulting Group in Hong Kong</h4>
-                  <p class="webcontent">Established in 2011, using OCG Recruitment's 30 years of experience operating in Asia, our JAC Hong Kong operation provides specialist recruitment services for the SAR regions. It is also the regional head office for JAC's
-                    Greater
-                    China business operations and thus collaborates closely with the JAC offices in Shanghai and Guangzhou providing high-calibre talent to our clients and supporting our candidates' new careers.
-
-                    Our areas of specialisation include: Electrical, Mechanical & Chemical, IT & Telecommunications, Accountancy & Finance, Medical/Pharmaceuticals/ Bioscience, Banking & Financial Services.
-
-                    To find out more about how OCG Recruitment can help you in your job search or for your business' recruitment needs, feel free to contact us for more information or email us at hongkong@jac-recruitment.hk</p>
-                </div>
+      <!--Section: Post-->
+      <section class="mt-3">
+        <div class="row wow fadeIn justify-">
+          <div class="col-md-9 col-sm-8 mb-4">
+            <div class="row">
+              <div class="col-12">
+                <p class="webcontent">Osmium Consulting Group Limited ( Osmium Consulting Group ) is founded with one single aim in mind - to provide specialist recruitment and HR advisory services to the TMT, Buy Side and Legal industry.</p>
               </div>
             </div>
-            <!--Grid column-->
-            <!--Grid column-->
-            <div class="col-md-3 col-sm-4 mb-4">
-              <!--Card: Jumbotron-->
-              <div class="card blue-gradient mb-4 wow fadeIn">
-                <!-- Content -->
-                <div class="card-body text-white text-center">
-                  <h4 class="mb-4">
-                    <strong>Osmium Consulting Group</strong>
-                  </h4>
-                  <p>
-                    <strong>Check Out our latest Job Openings!</strong>
-                  </p>
-                  <a target="_blank" href="#" class="btn btn-outline-white btn-md">Let's GO!
-                    <i class="fas fa-graduation-cap ml-2"></i>
-                  </a>
-                </div>
-                <!-- Content -->
+            <div class="row">
+              <div class="col-12">
+                <hr class="my-5">
+                <h4 class="headline">What We Do</h4>
+                <p class="webcontent">Based out of Hong Kong, an international financial hub, Osmium Consulting Group is a boutique search firm that provides professional recruitment services primarily within the TMT, Buy Side and Legal industry.
+                  Empowered by our integrated network and advanced methodical research tools, we have the ability to source high-calibre financial services professionals for and from any location around the world across all seniority levels in the
+                  market for some of the world’s most recognized brands.</p>
               </div>
-              <!--Card: Jumbotron-->
-
-              <!--Card : Dynamic content wrapper-->
-              <div class="card mb-4 text-center wow fadeIn">
-                <div class="card-header">Do you want to get informed about new articles?</div>
-                <!--Card content-->
-                <div class="card-body">
-                  <!-- Default form login -->
-                  <form>
-                    <!-- Default input name -->
-                    <label for="defaultFormNameEx" class="grey-text">Your name</label>
-                    <input type="text" id="defaultFormNameEx" class="form-control">
-                    <br>
-                    <!-- Default input email -->
-                    <label for="defaultFormEmailEx" class="grey-text">Your email</label>
-                    <input type="email" id="defaultFormLoginEmailEx" class="form-control">
-
-                    <div class="text-center mt-4">
-                      <button class="btn btn-info btn-md" type="submit">Sign up</button>
-                    </div>
-                  </form>
-                  <!-- Default form login -->
-                </div>
-              </div>
-              <!--/.Card : Dynamic content wrapper-->
             </div>
-            <!--Resources-->
-            <div class="row wow fadeIn">
-              <!--Grid column-->
-              <div class="card mb-4">
-                <div class="card-header">RESOURCES</div>
-                <!--Card content-->
-                <div class="container">
-                  <div class="row">
-                    <div class="col-lg-4 col-md-6 p-2 pt-5">
-                      <div class="highlight">
-                        <img class="card-img-top mr-3" src="img/banner/banner5.jpg" alt="Generic placeholder image">
-                        <div class="card-body">
-                          <a href="">
-                            <h5 class="mt-0 mb-1 font-weight-bold">Article 4</h5>
-                          </a>
-                          <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 p-2 pt-5">
-                      <div class="highlight">
-                        <img class="card-img-top mr-3" src="img/banner/banner5.jpg" alt="Generic placeholder image">
-                        <div class="card-body">
-                          <a href="">
-                            <h5 class="mt-0 mb-1 font-weight-bold">Article 5</h5>
-                          </a>
-                          <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
+            <div class="row">
+              <div class="col-12">
+                <hr class="my-5">
+                <h4 class="headline">Where We Are</h4>
+                <p class="webcontent">In an increasingly competitive marketplace, the prime asset which differentiates any organisation remains its people. Yet, searching and recruiting for proper candidates with appropriate skill set, mentality, and
+                  qualifications has proven a strain on a company's valuable resources and remained a major challenge for organisations with recruitment needs. Osmium Consulting Group relieves clients of the complex task of sourcing the highest
+                  calibre of personnel, and allow them to focus more fully on the management and continued growth of their business.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <hr class="my-5">
+                <h4 class="headline">Osmium Consulting Group in Hong Kong</h4>
+                <p class="webcontent">Osmium Consulting Group is dedicated to meeting the recruitment needs of our clients, and to helping fulfil the career aspirations of our candidates. By finding the most suitable match between client and
+                  candidate, we always strive to create a mutually beneficial solution for both. In addition to traditional contingency recruitment, we offer executive search services to source the highest calibre of professionals available.</p>
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-md-3 col-sm-4 mb-4">
+            <!--Card: Jumbotron-->
+            <div class="card blue-gradient mb-4 wow fadeIn">
+              <!-- Content -->
+              <div class="card-body text-white text-center">
+                <h4 class="mb-4">
+                  <strong>Osmium Consulting Group</strong>
+                </h4>
+                <p>
+                  <strong>Check Out our latest Job Openings!</strong>
+                </p>
+                <a target="_blank" href="#" class="btn btn-outline-white btn-md">Let's GO!
+                  <i class="fas fa-graduation-cap ml-2"></i>
+                </a>
+              </div>
+              <!-- Content -->
+            </div>
+            <!--Card: Jumbotron-->
+
+            <!--Card : Dynamic content wrapper-->
+            <div class="card mb-4 text-center wow fadeIn">
+              <div class="card-header">Do you want to get informed about new articles?</div>
+              <!--Card content-->
+              <div class="card-body">
+                <!-- Default form login -->
+                <form>
+                  <!-- Default input name -->
+                  <label for="defaultFormNameEx" class="grey-text">Your name</label>
+                  <input type="text" id="defaultFormNameEx" class="form-control">
+                  <br>
+                  <!-- Default input email -->
+                  <label for="defaultFormEmailEx" class="grey-text">Your email</label>
+                  <input type="email" id="defaultFormLoginEmailEx" class="form-control">
+
+                  <div class="text-center mt-4">
+                    <button class="btn btn-info btn-md" type="submit">Sign up</button>
+                  </div>
+                </form>
+                <!-- Default form login -->
+              </div>
+            </div>
+            <!--/.Card : Dynamic content wrapper-->
+          </div>
+          <!--Resources-->
+          <div class="row wow fadeIn">
+            <!--Grid column-->
+            <div class="card mb-4">
+              <div class="card-header">RESOURCES</div>
+              <!--Card content-->
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 p-2 pt-5">
+                    <div class="highlight">
+                      <img class="card-img-top mr-3" src="img/banner/banner5.jpg" alt="Generic placeholder image">
                       <div class="card-body">
-                        <ul class="list-unstyled">
-                          <li class="media">
-                            <img class="d-flex mr-3" src="https://dummyimage.com/70x70/000/fff" alt="Generic placeholder image">
-                            <div class="media-body">
-                              <a href="">
-                                <h5 class="mt-0 mb-1 font-weight-bold">Article 1</h5>
-                              </a>
-                              <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
-                            </div>
-                          </li>
-                          <li class="media my-4">
-                            <img class="d-flex mr-3" src="https://dummyimage.com/70x70/bf47cf/fff" alt="An image">
-                            <div class="media-body">
-                              <a href="">
-                                <h5 class="mt-0 mb-1 font-weight-bold">Article 2</h5>
-                              </a>
-                              <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
-                            </div>
-                          </li>
-                          <li class="media">
-                            <img class="d-flex mr-3" src="https://dummyimage.com/70x70/ed2d8a/fff" alt="Generic placeholder image">
-                            <div class="media-body">
-                              <a href="">
-                                <h5 class="mt-0 mb-1 font-weight-bold">Article 3</h5>
-                              </a>
-                              <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
-                            </div>
-                          </li>
-                        </ul>
+                        <a href="">
+                          <h5 class="mt-0 mb-1 font-weight-bold">Article 4</h5>
+                        </a>
+                        <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
                       </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 p-2 pt-5">
+                    <div class="highlight">
+                      <img class="card-img-top mr-3" src="img/banner/banner5.jpg" alt="Generic placeholder image">
+                      <div class="card-body">
+                        <a href="">
+                          <h5 class="mt-0 mb-1 font-weight-bold">Article 5</h5>
+                        </a>
+                        <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-12">
+                    <div class="card-body">
+                      <ul class="list-unstyled">
+                        <li class="media">
+                          <img class="d-flex mr-3" src="https://dummyimage.com/70x70/000/fff" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <a href="">
+                              <h5 class="mt-0 mb-1 font-weight-bold">Article 1</h5>
+                            </a>
+                            <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
+                          </div>
+                        </li>
+                        <li class="media my-4">
+                          <img class="d-flex mr-3" src="https://dummyimage.com/70x70/bf47cf/fff" alt="An image">
+                          <div class="media-body">
+                            <a href="">
+                              <h5 class="mt-0 mb-1 font-weight-bold">Article 2</h5>
+                            </a>
+                            <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img class="d-flex mr-3" src="https://dummyimage.com/70x70/ed2d8a/fff" alt="Generic placeholder image">
+                          <div class="media-body">
+                            <a href="">
+                              <h5 class="mt-0 mb-1 font-weight-bold">Article 3</h5>
+                            </a>
+                            <p>Article 12345678910 testing testing testing testing testing dummy dummy dummy (...)</p>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!--Resources-->
           </div>
-          <!--Grid row-->
-        </section>
-        <!--Section: Post-->
-      </div>
+          <!--Resources-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!--Section: Post-->
+    </div>
   </main>
   <!--Main layout-->
 
