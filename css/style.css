@@ -1,10 +1,11 @@
 body {
-  font-family: 'Lato', 'Raleway', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   -webkit-font-smoothing: auto;
+  background-color: #efefef;
 }
 
 header {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   -webkit-font-smoothing: auto;
   font-weight: 300;
 }
@@ -55,6 +56,7 @@ header {
   .webcontent {
     font-size: 1rem !important;
   }
+
   .webhead {
     font-size: 1.375rem !important;
   }
@@ -138,9 +140,14 @@ header {
 /*GoogleMap*/
 .map-container {
   overflow: hidden;
-  padding-bottom: 56.25%;
+  padding-bottom: 70%;
   position: relative;
   height: 0;
+  border-radius: 10px 0 0 10px;
+}
+
+.map-text {
+  border-radius: 0 10px 10px 0;
 }
 
 .map-container iframe {
@@ -149,6 +156,16 @@ header {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+@media (max-width: 1199px) {
+  .map-container {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .map-text {
+    border-radius: 0 0 10px 10px;
+  }
 }
 
 .contact-us {
@@ -206,6 +223,10 @@ nav.stroke ul li a:hover:after {
   width: 100%;
 }
 
+.contactani {
+  font-family: 'Lato';
+}
+
 .contactani:hover {
   -webkit-animation: heartBeat 1.8s;
   animation: heartBeat 1.8s;
@@ -258,3 +279,47 @@ nav.stroke ul li a:hover:after {
     border-radius: 0;
   }
 }
+
+/*Contact Us */
+.contact-meta-info {
+  font-size: 95%;
+  padding-left: 15px;
+}
+
+.contact-meto-info small {
+  font-size: 95%;
+}
+
+/*Carousel*/
+.show-neighbors {
+	 overflow: hidden;
+}
+ .show-neighbors .carousel-indicators {
+	 margin-right: 25%;
+	 margin-left: 25%;
+}
+ .show-neighbors .carousel-control-prev, .show-neighbors .carousel-control-next {
+	 background: rgba(255, 255, 255, 0.3);
+	 width: 25%;
+	 z-index: 11;
+	/* .carousel-caption has z-index 10 */
+}
+ .show-neighbors .carousel-inner {
+	 width: 150%;
+	 left: -25%;
+}
+ .show-neighbors .carousel-item-next:not(.carousel-item-left), .show-neighbors .carousel-item-right.active {
+	 -webkit-transform: translate3d(33%, 0, 0);
+	 transform: translate3d(33%, 0, 0);
+}
+ .show-neighbors .carousel-item-prev:not(.carousel-item-right), .show-neighbors .carousel-item-left.active {
+	 -webkit-transform: translate3d(-33%, 0, 0);
+	 transform: translate3d(-33%, 0, 0);
+}
+ .show-neighbors .item__third {
+	 float: left;
+	 position: relative;
+	/* captions can now be added */
+	 width: 33.33333333%;
+}
+ 

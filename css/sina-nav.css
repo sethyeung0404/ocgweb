@@ -165,7 +165,7 @@
   max-width: 160px;
   color: #414141;
   font-size: 14px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 20px;
 }
 
@@ -333,6 +333,7 @@
   }
 
   .sina-nav .sina-menu>.dropdown>.dropdown-toggle {
+    font-family:'Lato';
     padding-right: 15px;
   }
 

@@ -23,7 +23,7 @@
 					getWindow 	= $(window).outerWidth();
 				});
 
-			// Active Class Add & Remove 
+			// Active Class Add & Remove
 			// ---------------------------
 			getNav.find('.sina-menu').each(function(){
 				var $menu = $(this);
@@ -38,7 +38,7 @@
 				$menu.find( 'a[href="'+ location.href +'"]' ).parent('li').addClass('active');
 			});
 
-			// Navbar Center 
+			// Navbar Center
 			// ---------------------------------
 			if( getNav.hasClass('logo-center')){
 				var mainNav		= getNav.find('.sina-menu'),
@@ -257,7 +257,7 @@
 						var submenu;
 						for (submenu in $columnMenus) {
 							$columnMenus[ submenu ].stop().fadeIn().addClass(getIn);
-						}	
+						}
 					});
 
 					$(megamenu).on('mouseleave', function() {
