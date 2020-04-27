@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/font.css">
   <!-- Your custom styles (optional) -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.css">
 </head>
 
 <body>
@@ -395,10 +396,13 @@
           <!-- Grid column1 -->
           <div class="col-lg-8 col-md-8 col-sm-12 mb-3 px-2">
             <div class="view overlay">
-              <img class="img img-fluid" src="https://dummyimage.com/1655x450/007aeb/4196e5" alt="">
-              <a>
-                <div class="mask d-flex rgba-black-light">
-                  <h4 class="align-self-end text-white">123</h4>
+              <a href="img/event/virus.jpg" data-lightbox="image-1">
+                <img class="d-block w-100" src="img/event/virus.jpg">
+                <div class="mask1 rgba-black-light text-white">
+                  <div class="mask-text text-white text-left">
+                    <h4>Be careful of Coronavirus!</h4>
+                    <p>See how Coronavirus changed the job market ... see details</p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -406,10 +410,13 @@
           <!-- Grid column2 -->
           <div class="col-lg-4 col-md-4 col-sm-12 mb-3 px-2">
             <div class="view overlay">
-              <img class="img img-fluid" src="https://dummyimage.com/800x450/007aeb/4196e5" alt="">
-              <a>
-                <div class="mask flex-center rgba-black-light">
-                  <p class="">123</p>
+              <a href="img/event/buddha.jpg" data-lightbox="image-1">
+                <img class="d-block w-100" src="img/event/buddha.jpg">
+                <div class="mask rgba-black-light text-white">
+                  <div class="mask-text text-left">
+                    <h4>Halloween Event in Disneyland!</h4>
+                    <p>Everything is redesigned</p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -418,12 +425,15 @@
         <!-- Grid row2 -->
         <div class="row">
           <!-- Grid column1 -->
-          <div class="col-lg-4 col-md-4 mb-3 px-2">
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-3 px-2">
             <div class="view overlay">
-              <img class="img img-fluid" src="https://dummyimage.com/800x450/#007aeb/4196e5" alt="">
-              <a>
-                <div class="mask flex-center rgba-black-light">
-                  <p class="">123</p>
+              <a href="img/event/easter.png" data-lightbox="image-1">
+                <img class="d-block w-100" src="img/event/easter.png">
+                <div class="mask rgba-black-light text-white">
+                  <div class="mask-text text-left">
+                    <h4>Halloween Event in Disneyland!</h4>
+                    <p>Everything is redesigned</p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -568,6 +578,7 @@
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/lightbox.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
@@ -582,10 +593,10 @@
     document.createElement("picture");
   </script>
   <script src="picturefill.js"></script>
+  <script src="js/main.js"></script>
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
   </script>
-</body>
 
 </html>

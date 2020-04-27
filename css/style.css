@@ -290,6 +290,13 @@ nav.stroke ul li a:hover:after {
   font-size: 95%;
 }
 
+/*mask test*/
+.mask-text{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
 /*Carousel*/
 .show-neighbors {
 	 overflow: hidden;
@@ -306,20 +313,19 @@ nav.stroke ul li a:hover:after {
 }
  .show-neighbors .carousel-inner {
 	 width: 150%;
-	 left: -25%;
+	 left: 0%;
 }
  .show-neighbors .carousel-item-next:not(.carousel-item-left), .show-neighbors .carousel-item-right.active {
-	 -webkit-transform: translate3d(33%, 0, 0);
-	 transform: translate3d(33%, 0, 0);
+	 -webkit-transform: translate3d(25%, 0, 0);
+	 transform: translate3d(25%, 0, 0);
 }
  .show-neighbors .carousel-item-prev:not(.carousel-item-right), .show-neighbors .carousel-item-left.active {
-	 -webkit-transform: translate3d(-33%, 0, 0);
-	 transform: translate3d(-33%, 0, 0);
+	 -webkit-transform: translate3d(-25%, 0, 0);
+	 transform: translate3d(-25%, 0, 0);
 }
  .show-neighbors .item__third {
 	 float: left;
 	 position: relative;
 	/* captions can now be added */
-	 width: 33.33333333%;
+	 width: 25%;
 }
- 
