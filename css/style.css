@@ -1,7 +1,7 @@
 body {
   font-family: 'Helvetica', sans-serif;
   -webkit-font-smoothing: auto;
-  background-color: #efefef;
+  background-color: #fff;
 }
 
 header {
@@ -46,6 +46,17 @@ header {
   margin-top: 1em;
   color: #212529;
   text-align: justify;
+}
+
+.home_article {}
+
+.home_job {
+  background-color: #f1f1f1;
+}
+
+.card-footer i {
+  float: right;
+  position: relative;
 }
 
 @media screen and (max-width: 47.9375em) {
@@ -291,41 +302,65 @@ nav.stroke ul li a:hover:after {
 }
 
 /*mask test*/
-.mask-text{
+.mask-text {
   position: absolute;
   bottom: 8px;
   left: 16px;
   font-size: 18px;
 }
+
 /*Carousel*/
 .show-neighbors {
-	 overflow: hidden;
+  overflow: hidden;
 }
- .show-neighbors .carousel-indicators {
-	 margin-right: 25%;
-	 margin-left: 25%;
+
+.show-neighbors .carousel-indicators {
+  margin-right: 25%;
+  margin-left: 25%;
 }
- .show-neighbors .carousel-control-prev, .show-neighbors .carousel-control-next {
-	 background: rgba(255, 255, 255, 0.3);
-	 width: 25%;
-	 z-index: 11;
-	/* .carousel-caption has z-index 10 */
+
+.show-neighbors .carousel-control-prev, .show-neighbors .carousel-control-next {
+  background: rgba(255, 255, 255, 0.3);
+  width: 25%;
+  z-index: 11;
+  /* .carousel-caption has z-index 10 */
 }
- .show-neighbors .carousel-inner {
-	 width: 150%;
-	 left: 0%;
+
+.show-neighbors .carousel-inner {
+  width: 150%;
+  left: 0%;
 }
- .show-neighbors .carousel-item-next:not(.carousel-item-left), .show-neighbors .carousel-item-right.active {
-	 -webkit-transform: translate3d(25%, 0, 0);
-	 transform: translate3d(25%, 0, 0);
+
+.show-neighbors .carousel-item-next:not(.carousel-item-left), .show-neighbors .carousel-item-right.active {
+  -webkit-transform: translate3d(25%, 0, 0);
+  transform: translate3d(25%, 0, 0);
 }
- .show-neighbors .carousel-item-prev:not(.carousel-item-right), .show-neighbors .carousel-item-left.active {
-	 -webkit-transform: translate3d(-25%, 0, 0);
-	 transform: translate3d(-25%, 0, 0);
+
+.show-neighbors .carousel-item-prev:not(.carousel-item-right), .show-neighbors .carousel-item-left.active {
+  -webkit-transform: translate3d(-25%, 0, 0);
+  transform: translate3d(-25%, 0, 0);
 }
- .show-neighbors .item__third {
-	 float: left;
-	 position: relative;
-	/* captions can now be added */
-	 width: 25%;
+
+.show-neighbors .item__third {
+  float: left;
+  position: relative;
+  /* captions can now be added */
+  width: 25%;
+}
+
+blockquote {
+  border-left: none;
+  margin: 0;
+}
+
+blockquote img {
+  margin-bottom: 10px;
+}
+
+blockquote p:before {
+  content: "\f10d";
+  font-weight: 900;
+  font-family: 'Font Awesome 5 Free';
+  float: left;
+  margin-right: 10px;
 }
