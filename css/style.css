@@ -1,11 +1,11 @@
 body {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Roboto', "Noto Sans TC";
   -webkit-font-smoothing: auto;
   background-color: #fff;
 }
 
 header {
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Helvetica', "Noto Sans TC";
   -webkit-font-smoothing: auto;
   font-weight: 300;
 }
@@ -48,15 +48,45 @@ header {
   text-align: justify;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 30%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 80%;
+}
+
 .home_article {}
+
+.home_subtitle {
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
 
 .home_job {
   background-color: #f1f1f1;
 }
 
+.home_text {
+  letter-spacing: 0.6px;
+  text-align: justify;
+}
+
 .card-footer i {
   float: right;
   position: relative;
+}
+
+.mb-6 {
+  margin-bottom: 3.8rem !important;
 }
 
 @media screen and (max-width: 47.9375em) {
