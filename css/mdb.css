@@ -1237,6 +1237,15 @@
 .aqua-gradient {
   background: linear-gradient(40deg, #2096ff, #05ffa3) !important; }
 
+.carol-gradient1 {
+  background: linear-gradient(40deg, #303f9f, #330867) !important; }
+
+.carol-gradient2 {
+  background: linear-gradient(40deg, #45cafc, #2096ff) !important; }
+
+.carol-gradient3 {
+  background: linear-gradient(40deg, #ff6ec4, #f5576c) !important; }
+
 .blue-gradient {
   background: linear-gradient(40deg, #45cafc, #303f9f) !important; }
 

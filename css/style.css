@@ -41,7 +41,7 @@ header {
 
 .webcontent {
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 300;
   clear: left;
   margin-top: 1em;
   color: #212529;
@@ -337,6 +337,10 @@ nav.stroke ul li a:hover:after {
   bottom: 8px;
   left: 16px;
   font-size: 18px;
+}
+
+.team_font {
+  font-size: 7.5rem;
 }
 
 /*Carousel*/
