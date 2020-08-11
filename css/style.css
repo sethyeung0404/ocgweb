@@ -558,3 +558,32 @@ blockquote p:before {
   display:none;
 }
 }
+
+.card-teams {
+  border:20px solid #3b5998;
+}
+
+.card-img-top,
+.card-img-bottom {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.card-img-top {
+  border-top-left-radius: calc(0.5rem - 2px);
+  border-top-right-radius: calc(0.5rem - 1px);
+}
+
+.rectangle {
+  height: 4px;
+  width: 80px;
+  background-color: #556c96;
+  justify-content: center;
+}
+.rectangle2 {
+  height: 4px;
+  width: 80px;
+  background-color: #000000;
+  justify-content: center;
+}

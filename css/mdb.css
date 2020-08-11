@@ -3895,7 +3895,7 @@ a.waves-effect, a.waves-light {
   word-wrap: break-word;
   white-space: normal;
   cursor: pointer;
-  transform: skew(-8deg);
+  
   border: 0;
   border-radius: 0.125rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
