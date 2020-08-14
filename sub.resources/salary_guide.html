@@ -129,11 +129,11 @@
         <picture>
           <source srcset="img\banner\banner13-2000x250.png" media="(min-width: 1400px)">
           <!--2000x250-->
-          <source srcset="img\banner\banner11-1400x250.png" media="(min-width: 900px)">
+          <source srcset="img\banner\banner13-1400x250.png" media="(min-width: 900px)">
           <!--1400x250-->
-          <source srcset="img\banner\banner11-900x200.png" media="(min-width: 600px)">
+          <source srcset="img\banner\banner13-900x200.png" media="(min-width: 600px)">
           <!--900x200-->
-          <img srcset="img\banner\banner11-600x300.png" alt="responsive image" class="d-block img-fluid">
+          <img srcset="img\banner\banner13-600x300.png" alt="responsive image" class="d-block img-fluid">
           <!--600x300-->
         </picture>
         <div class="mask flex-center rgba-white-strong">
@@ -211,26 +211,36 @@
       </div>
   </main>
   <!--Main layout-->
+  <footer class="page-footer footer-font">
+    <!--/.Wrapper-->
+    <div class="container d-none d-sm-block">
+      <div class="row justify-content-between ">
+        <!--Copyright-->
+        <div class="col-6 p-3 text-left">Osmium Consulting Group Limited ( EA Licence No. 58549 )</div>
+        <div class="col-6 p-3 text-right">Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved by <a href="#">Osmium Consulting Group</a></div>
+        <!--/.Copyright-->
+      </div>
+    </div>
 
-  <!--Footer-->
-  <div id="id_footer">
-    <footer class="pt-3 page-footer footer-font">
-      <!--/.Wrapper-->
-      <div class="container">
-        <div class="row justify-content-between">
-          <!--Copyright-->
-          <div class="col-6 p-3 text-left">Osmium Consulting Group Limited ( EA Licence No. 58549 )</div>
-          <div class="col-6 p-3 text-right">Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script> All rights reserved by <a href="#">Osmium Consulting Group</a></div>
-          <!--/.Copyright-->
+    <div class="container d-sm-none d-block">
+      <div class="row justify-content-between">
+        <div class="col-12 " align="center">
+          <ul class="horizontal-list pt-3">
+            <li><a style="color:#FFFFFF;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i></a></li>
+            <li><a style="color:#FFFFFF;" href="https://www.instagram.com/osmiumcg_hk/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i></a></li>
+            <li><a style="color:#FFFFFF;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i></a></li>
+          </ul>
         </div>
-
-      <!--/.Wrapper-->
-    </footer>
-  </div>
-  <!--/.Footer-->
+        <div class="col-12 pb-3" align="center">Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved by <a href="#">Osmium Consulting Group</a></div>
+      </div>
+    </div>
+  </footer>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

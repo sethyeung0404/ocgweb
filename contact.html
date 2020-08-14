@@ -87,13 +87,6 @@
               </li>
               <!--Specialization-->
               <!--Resources-->
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">RESOURCES</a>
-                <ul class="dropdown-menu">
-                  <li><a href="sub.resources/market_updates.html">Market Updates</a></li>
-                  <li><a href="sub.resources/salary_guide.html">Salary Guide</a></li>
-                </ul>
-              </li>
               <!--Resources-->
               <!--Careers-->
               <li class="dropdown">
@@ -130,11 +123,11 @@
         <picture>
           <source srcset="img\banner\banner13-2000x250.png" media="(min-width: 1400px)">
           <!--2000x250-->
-          <source srcset="img\banner\banner11-1400x250.png" media="(min-width: 900px)">
+          <source srcset="img\banner\banner13-1400x250.png" media="(min-width: 900px)">
           <!--1400x250-->
-          <source srcset="img\banner\banner11-900x200.png" media="(min-width: 600px)">
+          <source srcset="img\banner\banner13-900x200.png" media="(min-width: 600px)">
           <!--900x200-->
-          <img srcset="img\banner\banner11-600x300.png" alt="responsive image" class="d-block img-fluid">
+          <img srcset="img\banner\banner13-600x300.png" alt="responsive image" class="d-block img-fluid">
           <!--600x300-->
         </picture>
         <div class="mask flex-center rgba-white-strong">
@@ -163,7 +156,7 @@
 
     <!--Section: Map&Contact Us -->
     <div class="container">
-      <section class="mt-2 wow fadeIn">
+      <section class="mt-2 wow fadeIn d-none d-sm-block">
         <!--Grid row-->
         <div class="row">
           <!--Grid column Map-->
@@ -196,7 +189,9 @@
           </div>
           <!--Grid row-->
         </div>
+
         <br><br>
+
         <div class="row">
           <!--Grid column Map-->
           <div class="col-7 text-center text-md-left">
@@ -226,7 +221,75 @@
           </div>
           <!--Grid row-->
         </div>
+          <hr class="mt-5 mb-5">
     </div>
+
+    </section>
+
+    <section class="mt-2 wow fadeIn d-block d-sm-none">
+      <!--Grid row-->
+      <div class="col-12 pt-3 bg-white map-text">
+        <!-- Heading -->
+        <div class="contact-meto-info">
+          <h4>Hong Kong Office</h4>
+          <hr>
+          <div class="pl-3">
+            <h5>Wan Chai</h5>
+            <small class="text-black-50">Office</small>
+            <p class="indigo-text">+852 3898 5500</p>
+            <small class="text-black-50">Email</small>
+            <p class="indigo-text">info@osmiumcg.com</p>
+            <small class="text-black-50">Address</small>
+            <p>1802, 18/F, Fortis Tower, 77 Gloucester Road, Wan Chai, Hong Kong</p>
+          </div>
+          <a href="mailto:info@osmiumcg.com" class="btn btn-mdb-color">Contact Us</a>
+        </div>
+        <!--Grid column Contact Us -->
+      </div>
+
+      <!--Grid column Map-->
+      <div class="col-12 text-center text-md-left">
+        <!--Google map-->
+        <div id="googlemap" class="map-container">
+          <iframe src="https://maps.google.com/maps?q=Osmium%20Consulting%20Group%2C%20Hong%20Kong&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!--Google Maps-->
+      </div>
+      <!--Grid column Map-->
+      <!--Grid column Contact Us-->
+
+      <!--Grid row-->
+      </div>
+
+      <br><br>
+
+      <div class="col-12 pt-3 bg-white map-text">
+        <!-- Heading -->
+        <div class="contact-meto-info">
+          <h4>Singapore Office</h4>
+          <hr>
+          <div class="pl-3">
+            <h5>Central Business District</h5>
+            <small class="text-black-50">Email</small>
+            <p class="indigo-text">info+sg@osmiumcg.com</p>
+            <small class="text-black-50">Address</small>
+            <p>Level 42, Six Battery Road, 049909 Singapore</p>
+          </div>
+          <a href="mailto:info+sg@osmiumcg.com" class="btn btn-mdb-color">Contact Us</a>
+        </div>
+        <!--Grid column Contact Us -->
+      </div>
+
+      <div class="col-12 text-center text-md-left">
+        <!--Google map-->
+        <div id="googlemap" class="map-container">
+          <iframe src="https://maps.google.com/maps?q=Level%2042%2C%20Six%20Battery%20Road&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!--Google Maps-->
+      </div>
+
+      </div>
+
     </section>
 
     <!--Section: Map&Contact Us -->
@@ -236,10 +299,10 @@
   <!--Main layout-->
 
   <!--Footer-->
-  <footer class="page-footer footer-font mt-4 wow fadeIn">
+  <footer class="page-footer footer-font">
     <!--/.Wrapper-->
-    <div class="container-fluid">
-      <div class="row justify-content-between">
+    <div class="container d-none d-sm-block">
+      <div class="row justify-content-between ">
         <!--Copyright-->
         <div class="col-6 p-3 text-left">Osmium Consulting Group Limited ( EA Licence No. 58549 )</div>
         <div class="col-6 p-3 text-right">Copyright &copy;
@@ -249,7 +312,22 @@
         <!--/.Copyright-->
       </div>
     </div>
-    <!--/.Wrapper-->
+
+    <div class="container d-sm-none d-block">
+      <div class="row justify-content-between">
+        <div class="col-12 " align="center">
+          <ul class="horizontal-list pt-3">
+            <li><a style="color:#FFFFFF;" href="https://www.facebook.com/Osmium-Consulting-Group-106189320975122/" target="_blank"><i class="fab fa-facebook-f fa-fw mr-2"></i></a></li>
+            <li><a style="color:#FFFFFF;" href="https://www.instagram.com/osmiumcg_hk/" target="_blank"><i class="fab fa-instagram fa-fw mr-2"></i></a></li>
+            <li><a style="color:#FFFFFF;" href="https://www.linkedin.com/company/osmium-consulting-group" target="_blank"><i class="fab fa-linkedin fa-fw mr-2"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-12 pb-3" align="center">Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script> All rights reserved by <a href="#">Osmium Consulting Group</a></div>
+      </div>
+    </div>
   </footer>
   <!--/.Footer-->
   <!-- SCRIPTS -->
@@ -263,6 +341,7 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!--sina-nav sidenav bar JavaScript -->
   <script type="text/javascript" src="js/sina-nav.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <!-- Initializations -->
   <script>
     //要套用的HTML元素

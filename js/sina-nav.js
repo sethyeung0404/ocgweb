@@ -226,8 +226,6 @@
 
 				$('.dropdown', menu).on('mouseenter', function(){
 					var dropdown = this;
-          console.log("click");
-          console.log(this);
 					$('.dropdown-menu', dropdown).eq(0).removeClass(getOut).stop().fadeIn().addClass(getIn);
 					$(dropdown).addClass('on');
 				});
