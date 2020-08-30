@@ -80,9 +80,9 @@
               <!--Specialization-->
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="ccc">SPECIALIZATION</a>
-                <ul class="long-menu dropdown-menu" id="ccc-menu">
-                  <li><a href="sub.specialization/tmt.html">TMT</a></li>
+                <ul class="mid-menu dropdown-menu" id="ccc-menu">
                   <li><a href="sub.specialization/banking-financial-services.html">Banking and Financial Services</a></li>
+                  <li><a href="sub.specialization/tmt.html">TMT</a></li>
                   <li><a href="sub.specialization/corporate.html">Corporate</a></li>
                 </ul>
               </li>
@@ -163,9 +163,7 @@
           <!--Grid column Map-->
           <div class="col-7 text-center text-md-left">
             <!--Google map-->
-            <div id="googlemap" class="map-container">
-              <iframe src="https://maps.google.com/maps?q=Osmium%20Consulting%20Group%2C%20Hong%20Kong&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            <div id="map1" class="map-container"></div>
             <!--Google Maps-->
           </div>
           <!--Grid column Map-->
@@ -197,9 +195,7 @@
           <!--Grid column Map-->
           <div class="col-7 text-center text-md-left">
             <!--Google map-->
-            <div id="googlemap" class="map-container">
-              <iframe src="https://maps.google.com/maps?q=Level%2042%2C%20Six%20Battery%20Road&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            <div id="map2" class="map-container"></div>
             <!--Google Maps-->
           </div>
           <!--Grid column Map-->
@@ -226,73 +222,6 @@
     </div>
 
     </section>
-
-    <section class="mt-2 wow fadeIn d-block d-sm-none">
-      <!--Grid row-->
-      <div class="col-12 pt-3 bg-white map-text">
-        <!-- Heading -->
-        <div class="contact-meto-info">
-          <h4>Hong Kong Office</h4>
-          <hr>
-          <div class="pl-3">
-            <h5>Wan Chai</h5>
-            <small class="text-black-50">Office</small>
-            <p class="indigo-text">+852 3898 5500</p>
-            <small class="text-black-50">Email</small>
-            <p class="indigo-text">info@osmiumcg.com</p>
-            <small class="text-black-50">Address</small>
-            <p>1802, 18/F, Fortis Tower, 77 Gloucester Road, Wan Chai, Hong Kong</p>
-          </div>
-          <a href="mailto:info@osmiumcg.com" class="btn btn-mdb-color">Contact Us</a>
-        </div>
-        <!--Grid column Contact Us -->
-      </div>
-
-      <!--Grid column Map-->
-      <div class="col-12 text-center text-md-left">
-        <!--Google map-->
-        <div id="googlemap" class="map-container">
-          <iframe src="https://maps.google.com/maps?q=Osmium%20Consulting%20Group%2C%20Hong%20Kong&t=&z=18&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <!--Google Maps-->
-      </div>
-      <!--Grid column Map-->
-      <!--Grid column Contact Us-->
-
-      <!--Grid row-->
-      </div>
-
-      <br><br>
-
-      <div class="col-12 pt-3 bg-white map-text">
-        <!-- Heading -->
-        <div class="contact-meto-info">
-          <h4>Singapore Office</h4>
-          <hr>
-          <div class="pl-3">
-            <h5>Central Business District</h5>
-            <small class="text-black-50">Email</small>
-            <p class="indigo-text">info+sg@osmiumcg.com</p>
-            <small class="text-black-50">Address</small>
-            <p>Level 42, Six Battery Road, 049909 Singapore</p>
-          </div>
-          <a href="mailto:info+sg@osmiumcg.com" class="btn btn-mdb-color">Contact Us</a>
-        </div>
-        <!--Grid column Contact Us -->
-      </div>
-
-      <div class="col-12 text-center text-md-left">
-        <!--Google map-->
-        <div id="googlemap" class="map-container">
-          <iframe src="https://maps.google.com/maps?q=Level%2042%2C%20Six%20Battery%20Road&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <!--Google Maps-->
-      </div>
-      <hr class="mt-5 mb-5">
-      </div>
-
-    </section>
-
     <!--Section: Map&Contact Us -->
 
 
@@ -348,6 +277,296 @@
     //要套用的HTML元素
     document.createElement("picture");
   </script>
+  <script>
+    function initialize() {
+      initMap();
+      initMap2();
+    }
+
+    function initMap() {
+      // Styles a map in night mode.
+      var myLatLng = {
+        lat: 22.2788861,
+        lng: 114.1723201
+      };
+      var map = new google.maps.Map(document.getElementById('map1'), {
+        center: myLatLng,
+        zoom: 17,
+        styles: [{
+            elementType: 'geometry',
+            stylers: [{
+              color: '#242f3e'
+            }]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#242f3e'
+            }]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#746855'
+            }]
+          },
+          {
+            featureType: 'administrative.locality',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#d59563'
+            }]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#d59563'
+            }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#263c3f'
+            }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#6b9a76'
+            }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#38414e'
+            }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#212a37'
+            }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#9ca5b3'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#746855'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#1f2835'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#f3d19c'
+            }]
+          },
+          {
+            featureType: 'transit',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#2f3948'
+            }]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#d59563'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#17263c'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#515c6d'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#17263c'
+            }]
+          }
+        ]
+      });
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Osmium Consulting Group!'
+      });
+    }
+
+    function initMap2() {
+      // Styles a map in night mode.
+      var myLatLng = {
+        lat: 1.2856225,
+        lng: 103.8521265
+      };
+
+      var map = new google.maps.Map(document.getElementById('map2'), {
+        center: myLatLng,
+        zoom: 17,
+        styles: [{
+            elementType: 'geometry',
+            stylers: [{
+              color: '#242f3e'
+            }]
+          },
+          {
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#242f3e'
+            }]
+          },
+          {
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#746855'
+            }]
+          },
+          {
+            featureType: 'administrative.locality',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#d59563'
+            }]
+          },
+          {
+            featureType: 'poi',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#d59563'
+            }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#263c3f'
+            }]
+          },
+          {
+            featureType: 'poi.park',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#6b9a76'
+            }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#38414e'
+            }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#212a37'
+            }]
+          },
+          {
+            featureType: 'road',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#9ca5b3'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#746855'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'geometry.stroke',
+            stylers: [{
+              color: '#1f2835'
+            }]
+          },
+          {
+            featureType: 'road.highway',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#f3d19c'
+            }]
+          },
+          {
+            featureType: 'transit',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#2f3948'
+            }]
+          },
+          {
+            featureType: 'transit.station',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#d59563'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'geometry',
+            stylers: [{
+              color: '#17263c'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.fill',
+            stylers: [{
+              color: '#515c6d'
+            }]
+          },
+          {
+            featureType: 'water',
+            elementType: 'labels.text.stroke',
+            stylers: [{
+              color: '#17263c'
+            }]
+          }
+        ]
+      });
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'Osmium Consulting Group!'
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATL0Ar3NLs5umBrgIpkvYMkzM_E2zW5pI&callback=initialize"></script>
   <script src="picturefill.js"></script>
   <script type="text/javascript">
     // Animations initialization

@@ -12,6 +12,10 @@ header {
   font-weight: 300;
 }
 
+#map1, #map2 {
+  height: 100%;
+}
+
 .index-card {
   background: white;
 }
