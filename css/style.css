@@ -15,7 +15,6 @@ header {
 }
 
 .index-card:hover {
-
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -24,7 +23,6 @@ header {
 }
 
 .index-card2:hover {
-
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -329,7 +327,7 @@ header {
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .5s;
+  transition: all .1s;
 }
 
 nav ul li a:hover {
@@ -734,17 +732,221 @@ blockquote p:before {
   display: inline;
 }
 
-.navtext{
- color: #414141;
+.navtext {
+  color: #414141;
 }
 
-.navtext:hover{
- color: #007bff;
+.navtext:hover {
+  color: #007bff;
 }
 
-.navbarDropdown{
-
+.navbarDropdown {
   height: :10%;
   padding: 0;
   background-color: #fcfcfc;
+}
+
+.boldword {
+  font-weight: bold !important;
+}
+
+.collapseContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.65rem;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.imgads {
+  display: inline-block;
+  height: 150px;
+  width: 300px;
+}
+
+.imgads-text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 15px;
+}
+
+.view .mask2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.scrolling-wrapper {
+  overflow-x: auto;
+  padding: 0 20px;
+}
+
+.subtitle {
+  font-size: 1.25em;
+  opacity: 0.65;
+}
+
+.indexbanner2 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .rectangle3 {
+    height: 8px;
+    width: 250px;
+    background-color: #556c96;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .rectangle3 {
+    height: 8px;
+    width: 450px;
+    background-color: #556c96;
+    justify-content: center;
+    border-radius: 10px 10px 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .bannerfont1{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0rem;
+  }
+  .bannerfont2{
+    font-size: 2.9rem;
+    letter-spacing: 0.4rem;
+  }
+  .headbanner {
+    height: 300px;
+    padding: 60px;
+    text-align: center;
+    background-image: url("../img/banner/banneroverview2000.jpg");
+    color: white;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+  .bannerfont1{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0rem;
+  }
+  .bannerfont2{
+    font-size: 2.9rem;
+    letter-spacing: 0.4rem;
+  }
+  .headbanner {
+    height: 300px;
+    padding: 60px;
+    text-align: center;
+    background-image: url("../img/banner/banneroverview1600.jpg");
+    color: white;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 850px) {
+  .bannerfont1{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0rem;
+  }
+  .bannerfont2{
+    font-size: 2.9rem;
+    letter-spacing: 0.4rem;
+  }
+  .headbanner {
+
+    padding: 60px;
+    text-align: center;
+    background-image: url("../img/banner/banneroverview1200.jpg");
+    color: white;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 425px) {
+  .bannerfont1{
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    margin-bottom: 0rem;
+  }
+  .bannerfont2{
+    font-size: 2.9rem;
+    letter-spacing: 0.4rem;
+  }
+  .headbanner {
+
+    padding: 60px;
+    text-align: center;
+    background-image: url("../img/banner/banneroverview850.jpg");
+    color: white;
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .bannerfont1{
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+  }
+  .bannerfont2{
+    font-size: 1.3rem;
+    letter-spacing: 0.4rem;
+  }
+  .headbanner {
+
+    padding: 60px;
+    text-align: center;
+    background-image: url("../img/banner/banneroverview850.jpg");
+    color: white;
+    font-size: 30px;
+  }
+}
+
+
+@media only screen and (min-width: 410px) {
+.rectangle4 {
+  height: 130px;
+  width: 8px;
+  background-color: #FFFFFF;
+  justify-content: center;
+}
+}
+
+@media only screen and (max-width: 670px) {
+.overviewfont {
+font-size: 4rem;
+}
+}
+
+@media (max-width: 758px) and (min-width: 670px) {
+.overviewfont {
+font-size: 5.2rem;
+}
+}
+@media only screen and (min-width: 758px) {
+.overviewfont {
+font-size: 6.3rem;
+}
+}
+
+.overviewcontent p{
+  font-size: 0.92rem;
+  text-align:justify;
 }
