@@ -57,6 +57,28 @@ $(window).resize(function() {
   stickyShares($(this).scrollTop());
 });
 
+/* simple hard-code default index method
+    $('.collapse').on('hidden.bs.collapse', function () {
+        $('.collapse').eq(0).collapse('show');
+    })
+*/
+
+
 setStickyPos();
 
 })(jQuery);
+
+$('.collapse').on('hidden.bs.collapse', function () {
+  // read the data-default value
+  var defaultDiv = $($(this).data("parent")).data("default");
+  // show the default panel
+  $('.collapse').eq(defaultDiv-1).collapse('show');
+})
+
+$('.panel-collapse').on('shown.bs.collapse', function(e) {
+  var $panel = $(this).attr("id")
+  console.log($panel)
+  $('html, body').animate({
+    scrollTop: $('#' + $panel).offset().top -160
+  }, 500);
+});

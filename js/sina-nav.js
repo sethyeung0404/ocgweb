@@ -104,7 +104,7 @@
       // Navbar Fixed
       // ---------------------------------
       function freezNav() {
-        var scrollTop = $(window).scrollTop(),
+        var scrollTop = $(window).scrollTop()+50,
           winWidth = $(window).outerWidth();
 
         if (winWidth > 1599 && scrollTop > xlTop) {

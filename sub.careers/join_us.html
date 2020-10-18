@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/sina-nav.css">
   <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/jplist.styles.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -123,61 +124,404 @@
         <div class="row">
           <div class="col-12 col-md-6 col-xl-8 align-self-center" align="center">
             <h1 class="my-4 text-center d-none d-sm-block animated fadeInLeft home_subtitle" style="font-size: 70px; line-height:60px;">CAREERS</h1>
-            <h1 class="my-4 d-block d-sm-none animated fadeInLeft home_subtitle" style="font-size: 30px; line-height:20px;">CAREERS</h1>
-
-            <h5 style="letter-spacing:0.15em;">Careers at OCG</h5><br><br>
+            <h1 class="my-4 d-block d-sm-none animated fadeInLeft home_subtitle mt-5" style="font-size: 45px; line-height:20px;">CAREERS</h1>
+            <h4 style="letter-spacing:0.15em;">Careers at OCG</h4>
+            <br><br>
             <h5 class="d-none d-sm-block">Scroll down to <u>View More</u></h5>
           </div>
           <div class="col-6 col-xl-4 d-none d-md-block">
-            <img src="img\joinus\Careers.jpg" alt="Office View" width="100%" style="max-height:700px;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <!--Copy this if there are more photos in future-->
+                <div class="carousel-item active">
+                  <!--881x860-->
+                  <img src="img\joinus\Careers.jpg" alt="Office View" width="100%" style="max-height:700px;">
+                </div>
+                <!--Copy this if there are more photos in future-->
+              </div>
+            </div>
           </div>
+
 
         </div>
       </section>
     </div>
+
     <section class="home_job mb-5" style="margin-left:5%; margin-right:5%;">
-        <div class="container">
-          <div class="row mt-5">
-            <div class="col-12 text-center">
-            <h1 class="my-4 text-center d-none d-md-block animated fadeInLeft" style="font-size:45px;">&nbsp;</h1>
-            <h1 class="my-4 d-block d-md-none animated fadeInLeft" style="font-size: 30px; line-height:20px;">&nbsp;</h1>
-
+      <div class="container container-custom">
+        <div class="row mt-5 pt-5">
+          <!--Filter-->
+          <div class="col-lg-2 col-md-4 mb-3">
+            <h3><strong>FILTER BY</strong></h3>
           </div>
+
+          <!-- fill countries -->
+          <div class="col-lg-3 col-md-4 mb-3">
+            <div data-jplist-control="dropdown-filter" data-group="group1" data-name="name1" class="jplist-dd">
+              <div data-type="panel" class="jplist-dd-panel">FILTER BY</div>
+              <div data-type="content" class="jplist-dd-content">
+                <div data-value="0" data-path="default" class="jplist-dd-item" data-selected="true">All Countries</div>
+                <div data-value="1" data-path=".hongkong" class="jplist-dd-item">Hong Kong</div>
+                <div data-value="2" data-path=".singapore" class="jplist-dd-item">Singapore</div>
+              </div>
+            </div>
           </div>
-          <div class="row">
-          <div class="col-12" style="line-height:25px;">
 
-            <h2 style="letter-spacing:0.1em;" class="d-none d-md-block"><strong>Recruitment Consultant</strong></h2>
-            <h4 style="letter-spacing:0.1em;" class=" d-block d-md-none"><strong>Recruitment Consultant</strong></h4>
+          <!-- fill work type -->
+          <div class="col-lg-3 col-md-4 mb-3">
+            <div data-jplist-control="dropdown-filter" data-group="group1" data-name="name2" class="jplist-dd">
+              <div data-type="panel" class="jplist-dd-panel">WORK TYPE</div>
+              <div data-type="content" class="jplist-dd-content">
+                <div data-value="0" data-path="default" class="jplist-dd-item" data-selected="true">All Type</div>
+                <div data-value="1" data-path=".fulltime" class="jplist-dd-item">Full Time</div>
+                <div data-value="2" data-path=".parttime" class="jplist-dd-item">Part Time</div>
+                <div data-value="3" data-path=".internship" class="jplist-dd-item">Internship</div>
+              </div>
+            </div>
+          </div>
 
-              <div class="rectangle2"></div>
-            <br>
-            <p style="line-height:30px;">We are now hiring for Recruitment Consultants in TMT, Banking and Financial Services, Corporate, Risk & Compliance Sectors. Our client portfolio includes Chinese & International Banks & Investment Banks, Funds, Family Offices, Securities, Asset Management Firms,
-              Law Firms and IT vendors and solution providers.</p>
-            <h5 style="line-height:50px;"><strong>Job Descriptions :</strong></h5>
-            <ul>
-              <li>Responsible for the recruitment process from sourcing suitable candidates to handling the placements</li>
-              <li>Become expert in current market / industry trends relating to the industry or job function</li>
-              <li>Interview and liaise with candidates to determine their personal strengths and expertises</li>
-              <li>Facilitate in negotiations between the client and candidate for the offer package</li>
-              <li>Understanding clients’ businesses and identifying their needs on recruitment</li>
-            </ul>
-            <h5 style="line-height:50px;"><strong>Job Requirements :</strong></h5>
-            <ul>
-              <li>Bachelor’s degree or above in any discipline</li>
-              <li>Proven track record in recruitment or sales</li>
-              <li>Related work experience in Banking & FI or IT is an absolute advantage</li>
-              <li>Fresh graduates with strong motivation and passion will also be considered</li>
-              <li>Proactive with strong communication skills</li>
-              <li>A good team player</li>
-              <li>Fluent English, Cantonese and Mandarin</li>
-            </ul>
-            <a href="mailto:info@osmiumcg.com" class="btn btn-mdb-color mb-5" style="transform: skew(-10deg);">Apply Now!</a>
+          <!--Filter-->
+        </div>
+
+        <div class="row pt-4 mb-5 panel-group" id="accordion">
+          <div data-jplist-group="group1">
+            <!--Software Developer ( Internship )-->
+            <div data-jplist-item>
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="accordion-toggle" data-toggle="collapse" href="#intern" role="button" aria-expanded="false">
+                    <h2 class="ls-1 d-none d-md-block"><strong>Software Developer ( Internship )</strong></h2>
+                    <h4 class="ls-1 d-block d-md-none"><strong>Software Developer ( Internship )</strong></h4>
+                  </a>
+                  <span class="pr-3 hongkong">Hong Kong</span>
+                  <span class="pr-3 internship parttime">Internship / Part Time</span>
+                  <span>TMT Division</span>
+                </div>
+                <div class="collapse panel-collapse" id="intern" data-parent="#accordion">
+
+                  <br>
+                  <p style="line-height:30px;">Our firm is rapidly expanding, We are looking for bright students to join our team, we are an innovative team and flooded with ideas, it would be great if you join us and enhance your portfolio! We are
+                    using the latest technologies, you will experience web application development using React.js, back-end development using node.js!</p>
+                  <h5 style="line-height:40px;"><strong>Job Descriptions :</strong></h5>
+                  <ul>
+                    <li>Participate in company project development, including website and mobile application, frontend and backend parts.</li>
+                    <li>Participate in improving frontend and backend frameworks that our team uses.</li>
+                    <li>Test Projects</li>
+                    <li>Participate in developing various underlying applications, such as databases and file systems.</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Job Requirements :</strong></h5>
+                  <ul>
+                    <li>Degree holder or above in Information Technology, Computer Science, or any other relevant disciplines</li>
+                    <li>Passionate about website and mobile application development</li>
+                    <li>Creative in solving programming problems</li>
+                    <li>Have experience with HTML, CSS, Javascript programming</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Preferred :</strong></h5>
+                  <ul>
+                    <li>Experience in React, Vue or Angular</li>
+                    <li>Experience in Java, Dart or Node.js</li>
+                    <li>Experience programming with Flutter</li>
+                    <li>Experience finishing a whole application</li>
+                  </ul>
+                  <p class="webcontent2">Salary offered will commensurate with qualifications and experience.
+                    Interested individuals please send CV with details on education and work experience, stating salary history and expected salary, and indicating your earliest availability to us by <b><u>clicking "Apply Now!"</u></b>
+                    <br><br>Applicants not invited for interview within 10 weeks from application date may assume that their applications are unsuccessful.
+                    Personal data collected will be treated in strictest confidence and will only be used for recruitment purposes.
+                    OCG reserves the right to consider late applications and not to make appointment for the post advertised.</p>
+                  <a href="mailto:info@osmiumcg.com?subject=OCG : Application for Software Developer ( Internship )" class="btn btn-mdb-color mb-3">Apply Now!</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!--Software Developer ( Internship )-->
+
+            <!--Software Developer ( Internship )-->
+            <div data-jplist-item>
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="accordion-toggle" data-toggle="collapse" href="#intern2" role="button" aria-expanded="false">
+                    <h2 class="ls-1 d-none d-md-block"><strong>UX/UI Designer ( Internship )</strong></h2>
+                    <h4 class="ls-1 d-block d-md-none"><strong>UX/UI Designer ( Internship )</strong></h4>
+                  </a>
+                  <span class="pr-3 hongkong">Hong Kong</span>
+                  <span class="pr-3 internship parttime">Internship / Part Time</span>
+                  <span>TMT Division</span>
+                </div>
+                <div class="collapse panel-collapse" id="intern2" data-parent="#accordion">
+
+                  <br>
+                  <p style="line-height:30px;">Our firm is rapidly expanding, We are looking for bright students to join our team, we are an innovative team and flooded with ideas, it would be great if you join us and enhance your portfolio! We are now hiring for UX/UI designers.</p>
+                  <h5 style="line-height:40px;"><strong>Job Descriptions :</strong></h5>
+                  <ul>
+                    <li>Responsible for UI and UX design for Mobile Apps and Web project</li>
+                    <li>Brainstorm, research, design, prototype and refine designs</li>
+                    <li>Responsive Web Design</li>
+                    <li>Collaborate with development teams</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Job Requirements :</strong></h5>
+                  <ul>
+                    <li>Be up-to-date on the latest web design trends</li>
+                    <li>High Diploma or Bachelor degree in Graphic Design, Visual Design, Interactive Design, Multimedia or relevant discipline</li>
+                    <li>Proficiency in Sketch, Photoshop, Illustrator and other graphic and interactive design tool</li>
+                    <li>Excellent communication skills and attention to detail</li>
+                    <li>Proactive with strong communication skills</li>
+                    <li>A good team player</li>
+                  </ul>
+                  <p class="webcontent2">Salary offered will commensurate with qualifications and experience.
+                    Interested individuals please send CV with details on education and work experience, stating salary history and expected salary, and indicating your earliest availability to us by <b><u>clicking "Apply Now!"</u></b>
+                    <br><br>Applicants not invited for interview within 10 weeks from application date may assume that their applications are unsuccessful.
+                    Personal data collected will be treated in strictest confidence and will only be used for recruitment purposes.
+                    OCG reserves the right to consider late applications and not to make appointment for the post advertised.</p>
+                  <a href="mailto:info@osmiumcg.com?subject=OCG : Application for UX/UI Designer ( Internship )" class="btn btn-mdb-color mb-3">Apply Now!</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!--Software Developer ( Internship )-->
+
+            <!--Recruitment Consutlant ( TMT )-->
+            <div data-jplist-item>
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="accordion-toggle" data-toggle="collapse" href="#consultant" role="button" aria-expanded="false">
+                    <h2 class="ls-1 d-none d-md-block"><strong>Recruitment Consultant ( TMT )</strong></h2>
+                    <h4 class="ls-1 d-block d-md-none"><strong>Recruitment Consultant ( TMT )</strong></h4>
+                  </a>
+                  <span class="pr-3 hongkong">Hong Kong</span>
+                  <span class="pr-3 fulltime">Full Time</span>
+                  <span>TMT Division</span>
+                </div>
+                <div class="collapse panel-collapse" id="consultant" data-parent="#accordion">
+                  <br>
+                  <p style="line-height:30px;">We are now hiring for Recruitment Consultants in TMT.</p>
+                  <h5 style="line-height:40px;"><strong>Job Descriptions :</strong></h5>
+                  <ul>
+                    <li>Responsible for the recruitment process from sourcing suitable candidates to handling the placements</li>
+                    <li>Become expert in current market / industry trends relating to the industry or job function</li>
+                    <li>Interview and liaise with candidates to determine their personal strengths and expertises</li>
+                    <li>Facilitate in negotiations between the client and candidate for the offer package</li>
+                    <li>Understanding clients’ businesses and identifying their needs on recruitment</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Job Requirements :</strong></h5>
+                  <ul>
+                    <li>Bachelor’s degree or above in any discipline</li>
+                    <li>Related work experience in IT or IT Recruitment is an absolute advantage</li>
+                    <li>Fresh graduates with strong motivation and passion will also be considered</li>
+                    <li>Proactive with strong communication skills</li>
+                    <li>A good team player</li>
+                    <li>Fluent English, Cantonese and Mandarin</li>
+                  </ul>
+                  <p class="webcontent2">Salary offered will commensurate with qualifications and experience.
+                    Interested individuals please send CV with details on education and work experience, stating salary history and expected salary, and indicating your earliest availability to us by <b><u>clicking "Apply Now!"</u></b>
+                    <br><br>Applicants not invited for interview within 10 weeks from application date may assume that their applications are unsuccessful.
+                    Personal data collected will be treated in strictest confidence and will only be used for recruitment purposes.
+                    OCG reserves the right to consider late applications and not to make appointment for the post advertised.</p>
+                  <a href="mailto:info@osmiumcg.com?subject=OCG : Application for Recruitment Consultant ( TMT )" class="btn btn-mdb-color mb-3">Apply Now!</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!--Recruitment Consutlant ( TMT )-->
+
+            <!--Recruitment Consutlant ( Banking & Financial Services )-->
+            <div data-jplist-item>
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="accordion-toggle" data-toggle="collapse" href="#consultant2" role="button" aria-expanded="false">
+                    <h2 class="ls-1 d-none d-md-block"><strong>Recruitment Consultant ( Banking and Financial Services )</strong></h2>
+                    <h4 class="ls-1 d-block d-md-none"><strong>Recruitment Consultant ( Banking and Financial Services )</strong></h4>
+                  </a>
+                  <span class="pr-3 hongkong">Hong Kong</span>
+                  <span class="pr-3 fulltime">Full Time</span>
+                  <span>Banking and Financial Services Division</span>
+                </div>
+                <div class="collapse panel-collapse" id="consultant2" data-parent="#accordion">
+
+                  <br>
+                  <p style="line-height:30px;">We are now hiring for Recruitment Consultants in Banking and Financial Services, Corporate, Risk & Compliance Sectors. Our client portfolio includes Chinese & International Banks & Investment Banks,
+                    Funds, Family Offices, Securities, Asset Management Firms, Law Firms.</p>
+                  <h5 style="line-height:40px;"><strong>Job Descriptions :</strong></h5>
+                  <ul>
+                    <li>Responsible for the recruitment process from sourcing suitable candidates to handling the placements</li>
+                    <li>Become expert in current market / industry trends relating to the industry or job function</li>
+                    <li>Interview and liaise with candidates to determine their personal strengths and expertises</li>
+                    <li>Facilitate in negotiations between the client and candidate for the offer package</li>
+                    <li>Understanding clients’ businesses and identifying their needs on recruitment</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Job Requirements :</strong></h5>
+                  <ul>
+                    <li>Bachelor’s degree or above in any discipline</li>
+                    <li>Proven track record in recruitment or sales</li>
+                    <li>Related work experience in Banking & FI is an absolute advantage</li>
+                    <li>Fresh graduates with strong motivation and passion will also be considered</li>
+                    <li>Proactive with strong communication skills</li>
+                    <li>A good team player</li>
+                    <li>Fluent English, Cantonese and Mandarin</li>
+                  </ul>
+                  <p class="webcontent2">Salary offered will commensurate with qualifications and experience.
+                    Interested individuals please send CV with details on education and work experience, stating salary history and expected salary, and indicating your earliest availability to us by <b><u>clicking "Apply Now!"</u></b>
+                    <br><br>Applicants not invited for interview within 10 weeks from application date may assume that their applications are unsuccessful.
+                    Personal data collected will be treated in strictest confidence and will only be used for recruitment purposes.
+                    OCG reserves the right to consider late applications and not to make appointment for the post advertised.</p>
+                  <a href="mailto:info@osmiumcg.com?subject=OCG : Application for Recruitment Consultant ( Banking and Financial Services )" class="btn btn-mdb-color mb-3">Apply Now!</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!--Recruitment Consutlant ( Banking & Financial Services )-->
+
+            <!--Recruitment Consutlant ( Fresh Graduates )-->
+            <div data-jplist-item>
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="accordion-toggle" data-toggle="collapse" href="#consultant3" role="button" aria-expanded="false">
+                    <h2 class="ls-1 d-none d-md-block"><strong>Recruitment Consultant ( Fresh Graduates )</strong></h2>
+                    <h4 class="ls-1 d-block d-md-none"><strong>Recruitment Consultant ( Fresh Graduates )</strong></h4>
+                  </a>
+                  <span class="pr-3 hongkong">Hong Kong</span>
+                  <span class="pr-3 fulltime">Full Time</span>
+                  <span>TMT Division</span>
+                </div>
+                <div class="collapse panel-collapse" id="consultant3" data-parent="#accordion">
+
+                  <br>
+                  <p style="line-height:30px;">We are now hiring for Recruitment Consultants in TMT Division ( Technology, Media & Telecommunications ).</p>
+                  <h5 style="line-height:40px;"><strong>Job Descriptions :</strong></h5>
+                  <ul>
+                    <li>Responsible for the recruitment process from sourcing suitable candidates to handling the placements</li>
+                    <li>Become expert in current market / industry trends relating to the industry or job function</li>
+                    <li>Interview and liaise with candidates to determine their personal strengths and expertises</li>
+                    <li>Facilitate in negotiations between the client and candidate for the offer package</li>
+                    <li>Understanding clients’ businesses and identifying their needs on recruitment</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Job Requirements :</strong></h5>
+                  <ul>
+                    <li>Bachelor’s degree or above in any discipline</li>
+                    <li>Fresh graduates with strong motivation and passion will also be considered</li>
+                    <li>Proactive with strong communication skills</li>
+                    <li>A good team player</li>
+                    <li>Fluent English, Cantonese and Mandarin</li>
+                  </ul>
+                  <p class="webcontent2">Salary offered will commensurate with qualifications and experience.
+                    Interested individuals please send CV with details on education and work experience, stating salary history and expected salary, and indicating your earliest availability to us by <b><u>clicking "Apply Now!"</u></b>
+                    <br><br>Applicants not invited for interview within 10 weeks from application date may assume that their applications are unsuccessful.
+                    Personal data collected will be treated in strictest confidence and will only be used for recruitment purposes.
+                    OCG reserves the right to consider late applications and not to make appointment for the post advertised.</p>
+                  <a href="mailto:info@osmiumcg.com?subject=OCG : Application for Recruitment Consultant ( Fresh Graduates )" class="btn btn-mdb-color mb-3">Apply Now!</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!--Recruitment Consutlant ( TMT )-->
+
+            <!--Manager, HR & Administration-->
+            <div data-jplist-item>
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="accordion-toggle" data-toggle="collapse" href="#Admin" role="button" aria-expanded="false">
+                    <h2 class="ls-1 d-none d-md-block"><strong>Manager, HR & Administration</strong></h2>
+                    <h4 class="ls-1 d-block d-md-none"><strong>Manager, HR & Administration</strong></h4>
+                  </a>
+                  <span class="pr-3 hongkong">Hong Kong</span>
+                  <span class="pr-3 fulltime">Full Time</span>
+                  <span>Non-Sales Unit</span>
+                </div>
+                <div class="collapse panel-collapse" id="Admin" data-parent="#accordion">
+
+                  <br>
+                  <h5 style="line-height:40px;"><strong>Job Descriptions :</strong></h5>
+                  <ul>
+                    <li>Provide all-round HR functions and duties including Compensation & Benefits, Talent Acquisition, Staff Relations, Performance Management ( KPI Checking ), and other key HR duties</li>
+                    <li>Handle incoming calls and greet visitors & candidates</li>
+                    <li>Oversee administration operations, including maintenance of equipment and facilities management</li>
+                    <li>Prepare regular report and maintain daily records of room booking in a timely and accurate manner</li>
+                    <li>Perform ad-hoc duties as assigned</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Job Requirements :</strong></h5>
+                  <ul>
+                    <li>1 - 5 years of HR or Administration or related experience</li>
+                    <li>Independent, smart, fast-paced, analytic, detail-minded with strong problem-solving, interpersonal and presentation skills</li>
+                    <li>Quick Learner, Positive and enthusiastic attitude</li>
+                    <li>Able to work well in a high-pressure environment</li>
+                    <li>Knowledge of Recruitment Operations will be an advantage</li>
+                    <li>Excellent excel skills and knowledge of HK employee ordinance will be an advantage</li>
+                    <li>Fluent English, Cantonese and Mandarin</li>
+                  </ul>
+                  <p class="webcontent2">Salary offered will commensurate with qualifications and experience.
+                    Interested individuals please send CV with details on education and work experience, stating salary history and expected salary, and indicating your earliest availability to us by <b><u>clicking "Apply Now!"</u></b>
+                    <br><br>Applicants not invited for interview within 10 weeks from application date may assume that their applications are unsuccessful.
+                    Personal data collected will be treated in strictest confidence and will only be used for recruitment purposes.
+                    OCG reserves the right to consider late applications and not to make appointment for the post advertised.</p>
+                  <a href="mailto:info@osmiumcg.com?subject=OCG : Application for Manager, HR & Administration" class="btn btn-mdb-color mb-3">Apply Now!</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!--Manager, HR & Administration-->
+
+            <!--Manager, HR & Administration-->
+            <div data-jplist-item>
+              <div class="col-12 mb-4">
+                <div>
+                  <a class="accordion-toggle" data-toggle="collapse" href="#InternHR" role="button" aria-expanded="false">
+                    <h2 class="ls-1 d-none d-md-block"><strong>Temporary Clerk, HR ( 6 months )</strong></h2>
+                    <h4 class="ls-1 d-block d-md-none"><strong>Temporary Clerk, HR ( 6 months )</strong></h4>
+                  </a>
+                  <span class="pr-3 hongkong">Hong Kong</span>
+                  <span class="pr-3 fulltime">Part Time</span>
+                  <span>Non-Sales Unit</span>
+                </div>
+                <div class="collapse panel-collapse" id="InternHR" data-parent="#accordion">
+
+                  <br>
+                  <p style="line-height:30px;">We are looking for </p>
+                  <h5 style="line-height:40px;"><strong>Job Descriptions :</strong></h5>
+                  <ul>
+                    <li>To input and compile data for Office Daily Operations</li>
+                    <li>To assist in HR & Administration Department</li>
+                    <li>To carry out general clerical duties for recruitment process</li>
+                    </ul>
+                  <h5 style="line-height:40px;"><strong>Job Requirements :</strong></h5>
+                  <ul>
+                    <li>Matriculated or above</li>
+                    <li>Proficiency in PC Operations ( MS Based applications and Chinese Word Processing )</li>
+                    <li>Knowledge and Interest in Recruitment would be an advantage</li>
+                    <li>Undergraduates are welcome</li>
+                  </ul>
+                  <h5 style="line-height:40px;"><strong>Duration :</strong></h5>
+                  <ul>
+                    <li>October 2020 - March 2021</li>
+                    </ul>
+                  <h5 style="line-height:40px;"><strong>Salary :</strong></h5>
+                  <ul>
+                    <li>A fixed rate of $60/hour</li>
+                  </ul>
+                  <p class="webcontent2">
+                    Interested individuals please send CV with details on education and work experience, stating salary history and expected salary, and indicating your earliest availability to us by <b><u>clicking "Apply Now!"</u></b>
+                    <br><br>Applicants not invited for interview within 10 weeks from application date may assume that their applications are unsuccessful.
+                    Personal data collected will be treated in strictest confidence and will only be used for recruitment purposes.
+                    OCG reserves the right to consider late applications and not to make appointment for the post advertised.</p>
+                  <a href="mailto:info@osmiumcg.com?subject=OCG : Application for Temporary Clerk, HR ( 6 months )" class="btn btn-mdb-color mb-3">Apply Now!</a>
+                </div>
+              </div>
+              <hr>
+            </div>
+            <!--Manager, HR & Administration-->
+
+
+            <div data-jplist-control="no-results" data-group="group1" data-name="no-results">
+              <div class="col-12 mb-4">
+                <h5 style="line-height:40px;"><strong>No Job Postings match these filters right now.</strong></h5>
+                <a data-jplist-control="reset" data-group="group1" data-name="reset" type="button"><u>Go back to all job postings</u></a>
+              </div>
+              <hr>
+            </div>
+
           </div>
         </div>
+
       </div>
-      </section>
-    </div>
+    </section>
     <!--Section: Post-->
 
   </main>
@@ -224,14 +568,13 @@
   <!--sina-nav sidenav bar JavaScript -->
   <script type="text/javascript" src="js/sina-nav.js"></script>
   <!-- Initializations -->
-  <script>
-    //要套用的HTML元素
-    document.createElement("picture");
-  </script>
-  <script src="picturefill.js"></script>
+  <!-- jPList Library -->
+  <script type="text/javascript" src="js/jplist.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+    jplist.init();
   </script>
 </body>
 
